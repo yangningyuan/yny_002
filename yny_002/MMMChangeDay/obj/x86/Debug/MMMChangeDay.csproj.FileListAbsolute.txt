@@ -1,0 +1,17 @@
+E:\tfs\zx270\zx270\MMMChangeDay\bin\Debug\MMMChangeDay.exe.config
+E:\tfs\zx270\zx270\MMMChangeDay\bin\Debug\MMMChangeDay.exe
+E:\tfs\zx270\zx270\MMMChangeDay\bin\Debug\MMMChangeDay.pdb
+E:\tfs\zx270\zx270\MMMChangeDay\obj\x86\Debug\MMMChangeDay.csprojResolveAssemblyReference.cache
+E:\tfs\zx270\zx270\MMMChangeDay\obj\x86\Debug\MMMChangeDay.exe
+E:\tfs\zx270\zx270\MMMChangeDay\obj\x86\Debug\MMMChangeDay.pdb
+C:\Users\yny\Desktop\zx326\MMMChangeDay\bin\Debug\MMMChangeDay.exe.config
+C:\Users\yny\Desktop\zx326\MMMChangeDay\bin\Debug\MMMChangeDay.exe
+C:\Users\yny\Desktop\zx326\MMMChangeDay\bin\Debug\MMMChangeDay.pdb
+C:\Users\yny\Desktop\zx326\MMMChangeDay\obj\x86\Debug\MMMChangeDay.csprojResolveAssemblyReference.cache
+C:\Users\yny\Desktop\zx326\MMMChangeDay\obj\x86\Debug\MMMChangeDay.exe
+C:\Users\yny\Desktop\zx326\MMMChangeDay\obj\x86\Debug\MMMChangeDay.pdb
+E:\tfs\zx326\zx326\MMMChangeDay\bin\Debug\MMMChangeDay.exe.config
+E:\tfs\zx326\zx326\MMMChangeDay\bin\Debug\MMMChangeDay.exe
+E:\tfs\zx326\zx326\MMMChangeDay\bin\Debug\MMMChangeDay.pdb
+E:\tfs\zx326\zx326\MMMChangeDay\obj\x86\Debug\MMMChangeDay.exe
+E:\tfs\zx326\zx326\MMMChangeDay\obj\x86\Debug\MMMChangeDay.pdb
