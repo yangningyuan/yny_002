@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../plugins/iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/style.css" /> 
+		<title>充值</title>
+	</head>
+	<body>
+		<div class="warp" id="recharge">
+			<header id="header">
+				<h3><span class="iconfont goback">&#xe614;</span>充值</h3>
+			</header>
+			<section>
+				<ul class="mui-table-view payType">
+					<li class="mui-table-view-cell title">
+				        支付方式
+				    </li>
+				    <li class="mui-table-view-cell" onclick="chooseType(this)">
+				        微信支付<span class="iconfont  active">&#xe604;</span>
+				    </li>
+				    <li class="mui-table-view-cell"  onclick="chooseType(this)">
+				        支付宝支付<span class="iconfont">&#xe604;</span>
+				    </li>
+				</ul>
+				<div class='userInput'><input type="text" value="1212131313" /></div>
+				<ul class="numList chooseIt">
+					<li class="active">1</li>
+					<li>1</li>
+					<li class="noMargin">1</li>
+					<li>1</li>
+				</ul>
+				<div>
+					<button class="myButton">充值</button>
+					<p class="tips">点击确定表示已阅读并同意<a href="">充值说明</a></p>
+				</div>
+			</section>
+			<footer id="footer">
+				
+			</footer>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+		<script>
+			activeFooter(2);
+		</script>
+	</body>
+</html>
+

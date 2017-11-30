@@ -1,0 +1,685 @@
+@main-color:#FB9B00;
+@main-font:#0E0E0E;
+@charset "utf-8";
+/*reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, button {
+    margin: 0px;
+    padding: 0px;
+    font-family:"Microsoft YaHei",Helvetica,Arial,sans-serif;
+}
+ul,li,ol{
+    list-style: none;
+}
+button, input, textarea, fieldset {
+    padding:0;
+    *overflow:visible;
+}
+input, textarea {
+    outline: none;
+    resize: none;
+}
+/*input[type=checkbox]{
+    visibility:hidden;
+}*/
+fieldset, img {
+    border: 0;
+}
+label {
+    cursor: pointer;
+}
+/*img {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+      vertical-align: middle;
+    border: 0
+}*/
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family:"微软雅黑","黑体","宋体";
+}
+body {
+    /*font-size: 1em;
+    line-height: 1.6;*/
+    color: #222;
+    margin: 0;
+}
+/*禁止苹果浏览器的默认按钮UI渲染*/
+input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], button {
+    -webkit-appearance: none;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../font_icons/iconfont.eot'); /* IE9*/
+    src: url('../font_icons/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font_icons/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font_icons/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font_icons/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+/*reset end*/
+/*@media*/
+@media  screen and(max-width: 320px){
+    html{
+        font-size:350%;
+    }
+}
+@media  screen and (min-width:320px) and (max-width: 375px){
+    html{
+        font-size:450%;
+    }
+}
+@media  screen and (min-width:375px) and (max-width: 425px){
+    html{
+        font-size:525%;
+    }
+}
+@media  screen and (min-width:425px ) and (max-width: 550px){
+    html{
+        font-size:650%;
+    }
+}
+@media  screen and (min-width:550px ){
+    html{
+        font-size:850%;
+    }
+}
+
+/*覆盖mui*/
+.mui-input-group .mui-input-row{
+    height: 0.5rem;
+    position: relative;
+}
+.mui-input-group .mui-input-row label{
+    height:0.5rem;
+    line-height: 0.5rem;
+    padding: 0 0.2rem;
+    font-size: 0.17rem;
+    font-weight: 700;
+}
+.mui-input-group .mui-input-row input{
+    height:0.5rem;
+    line-height: 0.5rem;
+    padding: 0;
+    font-size: 0.17rem;
+}
+.mui-table-view:before,.mui-table-view:after{
+    background-color:#dedede;
+}
+.mui-table-view-cell:after{
+    background-color:#dedede;
+}
+/*通用*/
+.warp{
+    position: relative;
+    background:#F1F1F1;
+    width:100%;
+    height:100%;
+}
+.warp section{
+    position:absolute;
+    top:0.6rem;
+    bottom: 0.7rem;
+    overflow: auto;
+    width:100%;
+    z-index:50;
+}
+::-webkit-scrollbar{ width:0px; }
+#header{
+    text-align: center;
+    z-index:100;
+}
+#header h3{
+    background: @main-color;
+    height:0.6rem;
+    line-height:0.6rem;
+    font-size:0.22rem;
+    color:#fff;
+    font-weight: 100;
+    position:relative;
+}
+#header h3 span.iconfont{
+    font-size:0.22rem;
+    color:#fff;
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    padding:0 0.15rem;
+}
+#footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:0.7rem;
+    z-index:100;
+    border-top:1px solid #bbb;
+    background: #fff;
+}
+#footer ul{
+    display:-moz-box; /* Firefox */
+    display:-webkit-box; /* Safari and Chrome */
+    display:box;
+}
+#footer ul li{
+    box-flex:1;
+    -moz-box-flex:1.0; /* Firefox */
+    -webkit-box-flex:1.0; /* Safari and Chrome */
+    text-align:center;
+    height:0.7rem;
+}
+#footer ul li a{
+    display:block;
+    height:0.7rem;
+    color:#8396BD;
+    padding-top: 0.05rem;
+}
+#footer ul li a span.iconfont{
+    height:0.4rem;
+    line-height:0.4rem;
+    font-size:0.3rem
+}
+#footer ul li a.active{
+    color:@main-color;
+}
+#footer ul li a.active p{
+    color:@main-color;
+}
+#footer ul li a p{
+    line-height: 0.25rem;
+    font-size:0.16rem;
+}
+.tabBox{
+    display:-moz-box; /* Firefox */
+    display:-webkit-box; /* Safari and Chrome */
+    display:box;
+    border-bottom: 1px solid #ccc;
+}
+.tabBox li{
+    box-flex:1.0;
+    -moz-box-flex:1.0; /* Firefox */
+    -webkit-box-flex:1.0; /* Safari and Chrome */
+    text-align:center;
+}
+.tabBox li a{
+    display:block;
+    height:0.5rem;
+    line-height:0.5rem;
+    background: #F0EFF5;
+    color: #000;
+    font-size:0.22rem;
+}
+.tabBox li a.active{
+    color:#3A9346;
+}
+.tabBox li:first-child a{
+    border-right:1px solid #ccc;
+}
+.list{
+    background: #fff;
+    li{
+        border-bottom:1px solid #ddd;
+        padding:0.2rem;
+        p.tittle{
+            font-weight: 700;
+            color:#1B1B1D;
+            font-size:0.21rem;
+        }
+        p{
+            color:#A8A8AA;
+        }
+    }
+}
+p.nothing{
+    color:#3D8F59;
+    text-align: center;
+    font-size: 0.21rem;
+    padding: 0.2rem;
+}
+.myButton{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background: @main-color;
+    font-size: 0.17rem;
+    border-radius: 0.05rem;
+    color: #fff;
+}
+/*bindPhone*/
+#bindPhone{
+    background:#ffffff;
+}
+#bindPhone .bindInfo{
+    text-align: center;
+    padding-top:0.7rem;
+}
+#bindPhone .bindInfo span.iconfont{
+    font-size:1.5rem;
+    line-height:1.5rem;
+    color:@main-color;
+}
+#bindPhone .bindInfo h3{
+    margin-top:0.25rem;
+    margin-bottom:0.15rem;
+    font-size:0.25rem;
+    
+}
+#bindPhone .bindInfo p{
+    font-size:0.18rem;
+    line-height:0.3rem;
+    padding:0 0.5rem;
+}
+#bindPhone .bindForm{
+    padding:0.3rem 0;
+}
+#bindPhone .bindForm form{
+    font-size:0.15rem;
+}
+.getCode{
+    position: absolute;
+    right: 5%;
+    bottom: 0.075rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    border-radius: 0.03rem;
+    padding: 0 0.1rem;
+    color: #fff;
+    background: @main-color;
+}
+
+//个人中心
+.perInfo{
+    margin-top:0.15rem;
+    padding:0.1rem 0;
+}
+.perlist{
+    margin-top:0.2rem;
+}
+.perInfo .mui-media-object{
+    width: 0.8rem;
+    height:0.8rem;
+    max-width: inherit;
+}
+.perInfo p{
+    line-height:0.4rem;
+    height:0.4rem;
+}
+.perInfo .perName{
+    
+    font-size:0.22rem;
+//  font-weight: 700;   
+    color:#000;
+}
+.perlist li{
+    font-size: 0.21rem;
+    height:0.6rem;
+    line-height:0.6rem;
+    padding:0;
+    margin: 0;
+}
+#perCenter .perlist li a{
+    margin: 0;
+    height:0.6rem;
+    line-height:0.6rem;
+    padding:0 0.3rem;
+    margin: 0;
+}
+.perlist li span.iconfont{
+    font-size:0.3rem;
+    margin-right:0.1rem;
+    position: relative;
+    top: 0.03rem;
+}
+.toBindPh span.iconfont{
+    color:@main-color;
+    margin-right:0.05rem;
+}
+.perlist1 span.iconfont{
+    color:#F8983A;
+}
+.perlist2 span.iconfont{
+    color:#1CCD9F;
+}
+.perlist3 span.iconfont{
+    color:#F69033;
+}
+.perlist4 span.iconfont{
+    color:#F2892A;
+}
+.perlist5 span.iconfont{
+    color:#03BE06;
+}
+//充值
+#recharge .payType{
+    margin-top:0.3rem;
+    .title{
+        color:#aaa;
+    }
+    li{
+        position:relative;
+        padding:0 0.3rem;
+        line-height: 0.6rem;
+        height:0.6rem;
+        
+       
+    }
+    .mui-table-view-cell:after{
+        background:#ccc;
+     }
+    li span.iconfont{
+        position: absolute;
+        right: 0.3rem;
+        top: 0;
+        color:#09B106;
+        display:none;
+    }
+    li span.active{
+        display:block;
+    }
+}
+#recharge .userInput{
+    margin:0.2rem 5%;
+    input{
+        line-height: 0.6rem;
+        height: 0.6rem;
+        border: 1px solid #ddd;
+        border-radius: 0.05rem;
+    }
+}
+.numList{
+    margin: 0.1rem 5%;
+    overflow: auto;
+    li{
+        float: left;
+        width: 31%;
+        margin-right:3.5%;
+        text-align: center;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 0.05rem;
+        margin-bottom: 0.15rem;
+    }
+    li.noMargin{
+        margin-right: 0;
+    }
+    li.active{
+        background: @main-color;
+        color:#fff;
+        border-color: @main-color;
+    }
+}
+.tips{
+    text-align: center;
+    font-size: 0.2rem;
+    margin-top: 0.1rem;
+    a{
+        color: #E99E54;
+    }
+}
+.newsList{
+    .mui-card-content{
+        a{
+            display: block;
+        }
+    }
+    p{
+        line-height: 0.7rem;
+        height: 0.7rem;
+        font-size: 0.24rem;
+        color:@main-font;
+        border-bottom: 1px solid #ddd;
+        padding: 0 0.2rem;
+    }
+    p.title{
+        font-size: 0.22rem;
+        font-weight: 700;
+    }
+    p.info{
+        font-size: 0.21rem;
+        font-weight: 700;
+    }
+    p.time{
+        color: #999;
+        border-bottom: none;
+    }
+}
+//新闻详情
+.newsContent{
+    padding: 0.2rem;
+    .title{
+        text-align: center;
+        font-size: 0.24rem;
+        color: @main-font;
+        word-break: break-word;
+        line-height: 0.3rem;
+    }
+    .time{
+        text-align: center;
+        font-size: 0.2rem;
+        line-height: 0.4rem;
+    }
+    .content{
+        text-indent: 0.4rem;
+        font-size: 0.21rem;
+    }
+}
+//充电中
+.electricizeInfo{
+    height: 5rem;
+    background: #303030;
+}
+.electricizeInfo{
+    position: relative;
+    .topIcon{
+        padding: 0.3rem;
+        overflow: auto;
+        span.iconfont{
+            color: #ADADAD;
+            font-size: 0.4rem;
+        } 
+    }
+    .bottomInfo{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 0.3rem 0.5rem;
+        p{
+            color: #E4E4E4;
+            line-height: 0.5rem;
+            height: 0.5rem;
+            font-size: 0.23rem;
+        }
+    }
+    .left{
+        float: left;
+        
+    }
+    .right{
+        float: right;
+    }
+}
+//关于我们
+.ourInfo{
+    padding: 0.2rem 0;
+    .logo{
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        margin: 0 auto;
+    }
+    p.version{
+        text-align: center;
+        font-size: 0.23rem;
+        line-height: 0.76rem;
+    }
+}
+#aboutUs{
+    .mui-table-view{
+        font-size: 0.22rem;
+        color: #000;
+        li{
+            padding: 0;
+            line-height: 0.6rem;
+            height: 0.6rem;
+            a{
+                padding: 0 0.2rem;
+                margin: 0;
+                line-height: 0.5rem;
+                height: 0.5rem;
+            }
+        }
+    }
+}
+//意见反馈
+#suggestion{
+    .title{
+        padding:0.15rem 0.1rem;
+        font-size: 0.2rem;
+        color:@main-font;
+        font-weight: 700;
+    }
+    .content{
+        background: #fff;
+        padding: 0.2rem 0;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        textarea{
+            border: none;
+            height: 1rem;
+            font-size: 0.18rem;
+            color: #000;
+            padding: 0 0.2rem;
+        }
+        input{
+            border: none;
+        }
+    }
+}
+//操作说明
+#help{
+    .introduce{
+        text-align: center;
+        .operates{
+            width: 1.6rem;
+            margin: 0 auto;
+            p{
+                text-align: left;
+                line-height: 0.35rem;
+                height: 0.35rem;
+            }
+            p.title{
+                 padding-left: 0.3rem;
+            }
+        }
+        h3{
+            font-size: 0.26rem;
+            color: #14A242;
+            padding:0.3rem 0.1rem;
+        }
+        h2{
+            font-size: 0.24rem;
+            color: #14A242;
+            padding:0.2rem 0.1rem;
+        }
+        p.line{
+            height: 1px;
+            width: 60%;
+            background: #aaa;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+//领取成功
+#success,#help{
+    background: #fff;
+}
+.successTips{
+    text-align: center;
+    padding-top: 1rem;
+    p{
+        padding: 0.2rem 0;
+    }
+    span{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        height: 1.5rem;
+        color: #0BB908;
+    }
+    p.title{
+        padding: 0;
+        margin-top: 0.4rem;
+        font-size: 0.26rem;
+        font-weight: 700;
+        color:@main-font;
+    }
+}
+//动态
+.noticeSetting{
+    background: #fff;
+    overflow: auto;
+    .left{
+        float: left;
+        padding: 0.2rem;
+        .title{
+            font-weight: 700;
+            font-size: 0.21rem;
+            line-height: 0.3rem;
+            height: 0.3rem;
+            color: @main-font;
+        }
+    }
+    .right{
+        float: right;
+        padding: 0.2rem;
+    }    
+}
+.walletList{
+    margin-top: 0.1rem;
+    background: #fff;
+    li{
+        color:@main-font;
+        padding: 0.2rem 0;
+        font-size: 0.2rem;
+        border-bottom: 1px solid #ddd;
+        overflow: auto;
+        p{
+           float: left;
+           color:@main-font;
+           font-size: 0.2rem; 
+           padding-left: 0.2rem;
+           width: 70%;
+        }
+        span{
+            color: #999;
+            float: right;
+            max-width:30%;
+            font-size:0.16rem;
+            padding-right: 0.2rem;
+        }
+    }
+}
+//充电记录
+#rechargeElectricityList {
+    section{
+        padding-top: 0.1rem;
+    }
+}
