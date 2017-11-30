@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="imageUp.ashx.cs" Class="qxjSoft.Web.Ueditor.imageUp" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="imageUp.ashx.cs" Class="yny_002.Web.Ueditor.imageUp" %>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HKChangeWY.aspx.cs" Inherits="qxjSoft.Web.ChangeMoney.HKChangeWY" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HKChangeWY.aspx.cs" Inherits="yny_002.Web.ChangeMoney.HKChangeWY" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -277,7 +277,7 @@
             })
         }
         function setValidMoney(realobj, validobj) {
-            $(validobj).val($(realobj).val() / <%=qxjSoft.BLL.Configuration.Model.B_InFloat %>);
+            $(validobj).val($(realobj).val() / <%=yny_002.BLL.Configuration.Model.B_InFloat %>);
         }
         function checkChange() {
             if ($('#txtHKDate').val().Trim() == "") {

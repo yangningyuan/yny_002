@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PayHB.aspx.cs" Inherits="qxjSoft.Web.ChangeMoney.PayHB" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PayHB.aspx.cs" Inherits="yny_002.Web.ChangeMoney.PayHB" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -89,7 +89,7 @@
     <div id="mempay">
         <div id="finance" class="bank">
             <form id="form1" method="post" target="_blank" action="Payment/GuoFuBao/Redirect.aspx">
-                <span class="remak">温馨提示：请在新打开的页面中完成支付，汇率为1：<%=qxjSoft.BLL.Configuration.Model.B_InFloat%> </span>
+                <span class="remak">温馨提示：请在新打开的页面中完成支付，汇率为1：<%=yny_002.BLL.Configuration.Model.B_InFloat%> </span>
                 <input type="hidden" id="bankauto" runat="server" />
                 <input type="hidden" id="tmid" runat="server" />
                 <div class="recharge">
@@ -139,7 +139,7 @@
             <input type="hidden" id="bankauto"  runat="server" />
             <form id="form1" method="post" target="_blank" action="Payment/YiTong/redirect.aspx">
                 <input type="hidden" id="tmid"  runat="server" />    
-                <span class="remak">温馨提示：请在新打开的页面中完成支付，汇率为1：<%=qxjSoft.BLL.Configuration.Model.B_InFloat%> </span>
+                <span class="remak">温馨提示：请在新打开的页面中完成支付，汇率为1：<%=yny_002.BLL.Configuration.Model.B_InFloat%> </span>
                 <div class="recharge">
                     <b>请选择支付方式</b>
             

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HBChange.aspx.cs" Inherits="qxjSoft.Web.ChangeMoney.HBChange"
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HBChange.aspx.cs" Inherits="yny_002.Web.ChangeMoney.HBChange"
     EnableEventValidation="false" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -22,7 +22,7 @@
                     <tr>
                         <td align="right">
                             <span>
-                                <%=qxjSoft.BLL.Reward.List["MJB"].RewardName%>余额：</span>
+                                <%=yny_002.BLL.Reward.List["MJB"].RewardName%>余额：</span>
                         </td>
                         <td>
                             <label id="txtMGP">
@@ -52,8 +52,8 @@
                             <span>转账钱包：</span>
                         </td>
                         <td>
-                            <%--<input id="RioJB" type="radio" value="MHB" name="RioHK" checked="checked" /><%=qxjSoft.BLL.Reward.List["MHB"].RewardName %>--%>
-                            <input id="Radio1" type="radio" value="MJB" name="RioHK" checked="checked" /><%=qxjSoft.BLL.Reward.List["MJB"].RewardName%>
+                            <%--<input id="RioJB" type="radio" value="MHB" name="RioHK" checked="checked" /><%=yny_002.BLL.Reward.List["MHB"].RewardName %>--%>
+                            <input id="Radio1" type="radio" value="MJB" name="RioHK" checked="checked" /><%=yny_002.BLL.Reward.List["MJB"].RewardName%>
                         </td>
                     </tr>
                     <tr>

@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="scrawlUp.ashx.cs" Class="qxjSoft.Web.Ueditor.scrawlUp" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="scrawlUp.ashx.cs" Class="yny_002.Web.Ueditor.scrawlUp" %>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ReturnSyn.aspx.cs" Inherits="qxjSoft.Web.Payment.ShouXinyi.ReturnSyn" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ReturnSyn.aspx.cs" Inherits="yny_002.Web.Payment.ShouXinyi.ReturnSyn" %>
 
 <!DOCTYPE html>
 

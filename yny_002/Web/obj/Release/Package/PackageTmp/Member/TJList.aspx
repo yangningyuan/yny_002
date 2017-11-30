@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TJList.aspx.cs" Inherits="qxjSoft.Web.Member.TJList" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TJList.aspx.cs" Inherits="yny_002.Web.Member.TJList" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -111,13 +111,13 @@
                         推荐人数
                     </th>
                     <th>
-                        <%=qxjSoft.BLL.Reward.List["MHB"].RewardName %>
+                        <%=yny_002.BLL.Reward.List["MHB"].RewardName %>
                     </th>
                     <th>
-                        <%=qxjSoft.BLL.Reward.List["MJB"].RewardName %>
+                        <%=yny_002.BLL.Reward.List["MJB"].RewardName %>
                     </th>
                     <%--<th>
-                        <%=qxjSoft.BLL.Reward.List["MCW"].RewardName %>
+                        <%=yny_002.BLL.Reward.List["MCW"].RewardName %>
                     </th>--%>
                     <th>
                         状态
@@ -159,9 +159,9 @@
                 </td>
                 <td>
                     <label>
-                        <input type="radio" value="MHB" name="txtCurrencyType" checked="checked" /><%=qxjSoft.BLL.Reward.List["MHB"].RewardName %></label>
+                        <input type="radio" value="MHB" name="txtCurrencyType" checked="checked" /><%=yny_002.BLL.Reward.List["MHB"].RewardName %></label>
                     <label>
-                        <input type="radio" name="txtCurrencyType" value="MJB" /><%=qxjSoft.BLL.Reward.List["MJB"].RewardName %></label>
+                        <input type="radio" name="txtCurrencyType" value="MJB" /><%=yny_002.BLL.Reward.List["MJB"].RewardName %></label>
                 </td>
             </tr>
             <tr>

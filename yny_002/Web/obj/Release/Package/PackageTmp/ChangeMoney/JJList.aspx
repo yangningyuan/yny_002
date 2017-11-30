@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JJList.aspx.cs" Inherits="qxjSoft.Web.ChangeMoney.JJList" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JJList.aspx.cs" Inherits="yny_002.Web.ChangeMoney.JJList" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -68,10 +68,10 @@
                     <th>奖金合计
                     </th>
                     <%--<th>
-                        <%=qxjSoft.BLL.Reward.List["MHB"].RewardName %>
+                        <%=yny_002.BLL.Reward.List["MHB"].RewardName %>
                     </th>--%>
                     <%--<th>
-                        <%=qxjSoft.BLL.Reward.List["MCW"].RewardName %>
+                        <%=yny_002.BLL.Reward.List["MCW"].RewardName %>
                     </th>--%>
                     <th>奖励类型
                     </th>

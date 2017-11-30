@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="GrantPowers.ashx.cs" Class="qxjSoft.Web.Handler.GrantPowers" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="GrantPowers.ashx.cs" Class="yny_002.Web.Handler.GrantPowers" %>

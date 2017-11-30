@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TXChange.aspx.cs" Inherits="qxjSoft.Web.ChangeMoney.TXChange"
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TXChange.aspx.cs" Inherits="yny_002.Web.ChangeMoney.TXChange"
     EnableEventValidation="false" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -30,7 +30,7 @@
                 </tr>
                 <tr>
                     <td align="right">
-                        <span>可用<%=qxjSoft.BLL.Reward.List["MHB"].RewardName %>：</span>
+                        <span>可用<%=yny_002.BLL.Reward.List["MHB"].RewardName %>：</span>
                     </td>
                     <td class="tdAvalibleMoney">
                         <%=TModel.MConfig.MJJ.ToString("F2")%>

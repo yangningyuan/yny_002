@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="MemberYJList.ashx.cs" Class="qxjSoft.Web.Handler.MemberYJList" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="MemberYJList.ashx.cs" Class="yny_002.Web.Handler.MemberYJList" %>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HBGM.aspx.cs" Inherits="qxjSoft.Web.ChangeMoney.HBGM"
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HBGM.aspx.cs" Inherits="yny_002.Web.ChangeMoney.HBGM"
     EnableEventValidation="false" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -32,7 +32,7 @@
                         <span>充值钱包:</span>
                     </td>
                     <td>
-                        <input id="rdoMJB" value="MJB" type="radio" name="rdo" checked="checked" /><%=qxjSoft.BLL.Reward.List["MJB"].RewardName %>
+                        <input id="rdoMJB" value="MJB" type="radio" name="rdo" checked="checked" /><%=yny_002.BLL.Reward.List["MJB"].RewardName %>
                     </td>
                 </tr>
                 <tr>

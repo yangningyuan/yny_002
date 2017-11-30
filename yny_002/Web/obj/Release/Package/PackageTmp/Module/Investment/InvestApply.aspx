@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvestApply.aspx.cs" Inherits="qxjSoft.Web.Module.Investment.InvestApply" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvestApply.aspx.cs" Inherits="yny_002.Web.Module.Investment.InvestApply" %>
 
 <!DOCTYPE html>
 
@@ -26,7 +26,7 @@
                 <table cellpadding="0" cellspacing="0">
                     <tr>
                         <td align="right">
-                            <span><%=qxjSoft.BLL.Reward.List["MJB"].RewardName %>:</span>
+                            <span><%=yny_002.BLL.Reward.List["MJB"].RewardName %>:</span>
                         </td>
                         <td>
                             <%=TModel.MConfig.MJB.ToFixedString() %>
@@ -45,7 +45,7 @@
                             <span>选择币种:</span>
                         </td>
                         <td>
-                            <input id="Radio1" value="MJB" type="radio" name="rdo" checked="checked" /><%=qxjSoft.BLL.Reward.List["MJB"].RewardName %>
+                            <input id="Radio1" value="MJB" type="radio" name="rdo" checked="checked" /><%=yny_002.BLL.Reward.List["MJB"].RewardName %>
                         </td>
                     </tr>
                     <tr>

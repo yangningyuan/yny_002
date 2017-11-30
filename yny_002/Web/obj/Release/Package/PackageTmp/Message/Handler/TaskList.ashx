@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="TaskList.ashx.cs" Class="qxjSoft.Web.Handler.TaskList" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="TaskList.ashx.cs" Class="yny_002.Web.Handler.TaskList" %>

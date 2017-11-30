@@ -42,3 +42,14 @@ C:\Users\yny\Desktop\qxjSoft\Model\bin\Release\CommonModel.pdb
 C:\Users\yny\Desktop\qxjSoft\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
 C:\Users\yny\Desktop\qxjSoft\Model\obj\Release\qxjSoft.Model.dll
 C:\Users\yny\Desktop\qxjSoft\Model\obj\Release\qxjSoft.Model.pdb
+D:\工作目录\yny_002\yny_002\Model\bin\Release\yny_002.Model.dll
+D:\工作目录\yny_002\yny_002\Model\bin\Release\yny_002.Model.pdb
+D:\工作目录\yny_002\yny_002\Model\bin\Release\CommonModel.dll
+D:\工作目录\yny_002\yny_002\Model\bin\Release\DBUtility.dll
+D:\工作目录\yny_002\yny_002\Model\bin\Release\IBatisNet.DataMapper.dll
+D:\工作目录\yny_002\yny_002\Model\bin\Release\IBatisNet.Common.dll
+D:\工作目录\yny_002\yny_002\Model\bin\Release\MySql.Data.dll
+D:\工作目录\yny_002\yny_002\Model\bin\Release\CommonModel.pdb
+D:\工作目录\yny_002\yny_002\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\工作目录\yny_002\yny_002\Model\obj\Release\yny_002.Model.dll
+D:\工作目录\yny_002\yny_002\Model\obj\Release\yny_002.Model.pdb

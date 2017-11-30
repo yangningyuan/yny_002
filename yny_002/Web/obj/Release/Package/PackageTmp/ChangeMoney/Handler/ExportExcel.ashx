@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="ExportExcel.ashx.cs" Class="qxjSoft.Web.ChangeMoney.Handler.ExportExcel" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="ExportExcel.ashx.cs" Class="yny_002.Web.ChangeMoney.Handler.ExportExcel" %>

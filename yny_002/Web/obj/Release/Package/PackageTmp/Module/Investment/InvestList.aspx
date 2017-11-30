@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvestList.aspx.cs" Inherits="qxjSoft.Web.Module.Investment.InvestList" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvestList.aspx.cs" Inherits="yny_002.Web.Module.Investment.InvestList" %>
 
 <!DOCTYPE html>
 

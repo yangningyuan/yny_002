@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="List.aspx.cs" Inherits="qxjSoft.Web.Member.List" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="List.aspx.cs" Inherits="yny_002.Web.Member.List" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -94,29 +94,29 @@
                     <th>会员类型
                     </th>
                     <th>
-                        <%=qxjSoft.BLL.Reward.List["MHB"].RewardName %>
+                        <%=yny_002.BLL.Reward.List["MHB"].RewardName %>
                     </th>
-                    <th>
-                        <%=qxjSoft.BLL.Reward.List["MJB"].RewardName%>
-                    </th>
-                    <th>推荐人
-                    </th>
+                    <%--<th>
+                        <%=yny_002.BLL.Reward.List["MJB"].RewardName%>
+                    </th>--%>
+                   <%-- <th>推荐人
+                    </th>--%>
                     <%--<th>地区
                     </th>--%>
-                    <th>锁定状态
+                 <%--   <th>锁定状态
                     </th>
                     <th>冻结状态
-                    </th>
+                    </th>--%>
                     <%--<th>身份证图片
                     </th>--%>
-                    <th>有效投资额
+                  <%--  <th>有效投资额
                     </th>
                     <th>团队有效投资额
+                    </th>--%>
+                    <th>注册日期
                     </th>
-                    <th>投资日期
-                    </th>
-                    <th>操作
-                    </th>
+                    <%--<th>操作
+                    </th>--%>
                 </tr>
             </table>
             <div class="ui_table_control">

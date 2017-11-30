@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="InvestQuit.ashx.cs" Class="qxjSoft.Web.Module.Investment.Handler.InvestQuit" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="InvestQuit.ashx.cs" Class="yny_002.Web.Module.Investment.Handler.InvestQuit" %>

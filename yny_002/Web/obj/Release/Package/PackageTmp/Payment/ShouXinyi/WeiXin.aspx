@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WeiXin.aspx.cs" Inherits="qxjSoft.Web.Payment.ShouXinyi.WeiXin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WeiXin.aspx.cs" Inherits="yny_002.Web.Payment.ShouXinyi.WeiXin" %>
 
 <!DOCTYPE html>
 

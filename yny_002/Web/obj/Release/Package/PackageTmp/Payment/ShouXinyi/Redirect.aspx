@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Redirect.aspx.cs" Inherits="qxjSoft.Web.Payment.ShouXinyi.Redirect" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Redirect.aspx.cs" Inherits="yny_002.Web.Payment.ShouXinyi.Redirect" %>
 
 <!DOCTYPE html>
 

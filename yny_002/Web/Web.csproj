@@ -147,83 +147,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\css\bootstrap.css" />
-    <Content Include="Admin\css\flexy-menu.css" />
-    <Content Include="Admin\css\style.css" />
-    <Content Include="Admin\css\touchTouch.css" />
-    <Content Include="Admin\find_password\css\bootstrap.css" />
-    <Content Include="Admin\find_password\css\style.css" />
-    <Content Include="Admin\find_password\find_password.htm" />
-    <Content Include="Admin\find_password\images\fac.ico" />
-    <Content Include="Admin\find_password\images\logo.png" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Admin\images\banner.jpg" />
-    <Content Include="Admin\images\banner02.jpg" />
-    <Content Include="Admin\images\banner03.jpg" />
-    <Content Include="Admin\images\edit.png" />
-    <Content Include="Admin\images\gold.png" />
-    <Content Include="Admin\images\hl.png" />
-    <Content Include="Admin\images\hot.gif" />
-    <Content Include="Admin\images\jf.png" />
-    <Content Include="Admin\images\logo.png" />
-    <Content Include="Admin\images\menu.png" />
-    <Content Include="Admin\images\noticeIco2.png" />
-    <Content Include="Admin\images\online.png" />
-    <Content Include="Admin\images\p1.png" />
-    <Content Include="Admin\images\p2.png" />
-    <Content Include="Admin\images\p3.png" />
-    <Content Include="Admin\images\p4.png" />
-    <Content Include="Admin\images\user.png" />
-    <Content Include="Admin\images\wjb.png" />
-    <Content Include="Admin\images\xj.png" />
-    <Content Include="Admin\Index.aspx" />
-    <Content Include="Admin\js\bootstrap.min.js" />
-    <Content Include="Admin\js\flexy-menu.js" />
-    <Content Include="Admin\js\jquery-1.11.1.min.js" />
-    <Content Include="Admin\login\css\bootstrap.css" />
-    <Content Include="Admin\login\css\login.css" />
-    <Content Include="Admin\login\css\style1.css" />
-    <Content Include="Admin\login\images\background.jpg" />
-    <Content Include="Admin\login\images\btn.png" />
-    <Content Include="Admin\login\images\content_bg.png" />
-    <Content Include="Admin\login\images\logo.png" />
-    <Content Include="Admin\login\images\logo1.png" />
-    <Content Include="Admin\login\images\yanzhengma.jpg" />
-    <Content Include="Admin\login\js\jquery-1.11.1.min.js" />
-    <Content Include="Admin\login\Login.htm" />
-    <Content Include="Admin\login_phone\css\style.css" />
-    <Content Include="Admin\login_phone\images\bg.jpg" />
-    <Content Include="Admin\login_phone\images\logo.png" />
-    <Content Include="Admin\login_phone\images\yzhm.png" />
-    <Content Include="Admin\login_phone\Login.html" />
-    <Content Include="Admin\pop\css\next_page_search.css" />
-    <Content Include="Admin\pop\js\jquery.qrcode.min.js" />
-    <Content Include="Admin\pop\js\linkage.js" />
-    <Content Include="Admin\pop\js\TableToExcel.js" />
-    <Content Include="Admin\pop\css\pop.css" />
-    <Content Include="Admin\pop\css\V5-UI.css" />
-    <Content Include="Admin\pop\js\ajax.js" />
-    <Content Include="Admin\pop\js\bg5.js" />
-    <Content Include="Admin\pop\js\bg5e.js" />
-    <Content Include="Admin\pop\js\javascript_main.js" />
-    <Content Include="Admin\pop\js\javascript_pop.js" />
-    <Content Include="Admin\pop\js\jquery.pagination.js" />
-    <Content Include="Admin\pop\js\LanguageConvert.js" />
-    <Content Include="Admin\pop\js\MyValide.js" />
-    <Content Include="Admin\pop\js\uaredirect.js" />
-    <Content Include="Admin\pop\js\V5-UI.js" />
-    <Content Include="Admin\pop\js\javascript_main_en.js" />
-    <Content Include="Admin\pop\js\javascript_pop_en.js" />
-    <Content Include="Admin\regedit\css\bootstrap.css" />
-    <Content Include="Admin\regedit\css\style.css" />
-    <Content Include="Admin\regedit\images\bg.jpg" />
-    <Content Include="Admin\regedit\images\fac.ico" />
-    <Content Include="Admin\regedit\images\logo.png" />
-    <Content Include="Admin\regedit\js\bootstrap.js" />
-    <Content Include="Admin\regedit\js\jquery.js" />
-    <Content Include="Admin\regedit\js\layer.js" />
-    <Content Include="Admin\regedit\js\web.js" />
-    <Content Include="Admin\regedit\regedit.htm" />
     <Content Include="AjaxM\ajax.aspx" />
     <Content Include="autoaspx\hour.aspx" />
     <Content Include="autoaspx\minute.aspx" />
@@ -232,8 +155,7 @@
     <Content Include="ChangeMoney\HKChangeWY.aspx" />
     <Content Include="ChangeMoney\KFChange.aspx" />
     <Content Include="ChangeMoney\KFList.aspx" />
-    <Content Include="Admin\pop\images\home_main.png" />
-    <Content Include="Admin\pop\images\uploadify-cancel.png" />
+    <Content Include="Login2.aspx" />
     <Content Include="login\css\bootstrap.css" />
     <Content Include="login\css\login.css" />
     <Content Include="login\css\style1.css" />
@@ -990,19 +912,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\pop\Handler\Language.ashx.cs">
-      <DependentUpon>Language.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\UpLoadPic\IbeaconHandler.ashx.cs">
-      <DependentUpon>IbeaconHandler.ashx</DependentUpon>
-    </Compile>
     <Compile Include="AjaxM\ajax.aspx.cs">
       <DependentUpon>ajax.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1083,6 +992,13 @@
     </Compile>
     <Compile Include="ChangeMoney\KFList.aspx.designer.cs">
       <DependentUpon>KFList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.aspx.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login2.aspx.designer.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Member\Handler\TJTree.ashx.cs">
       <DependentUpon>TJTree.ashx</DependentUpon>
@@ -1645,6 +1561,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\" />
     <Folder Include="mobile\unpackage\" />
     <Folder Include="plugin\kindeditor\attached\image\" />
     <Folder Include="plugin\UEditor\net\upload1\" />
@@ -1688,9 +1605,7 @@
     <Content Include="SysManage\Handler\RolePowers.ashx" />
     <Content Include="Member\Handler\TJNet.ashx" />
     <Content Include="ChangeMoney\Handler\TXList.ashx" />
-    <Content Include="Admin\UpLoadPic\IbeaconHandler.ashx" />
     <Content Include="SysManage\Language\Handler\LanguageList.ashx" />
-    <Content Include="Admin\pop\Handler\Language.ashx" />
     <Content Include="ChangeMoney\Handler\KFList.ashx" />
     <Content Include="plugin\kindeditor\asp.net\file_manager_json.ashx" />
     <Content Include="plugin\kindeditor\asp.net\upload_json.ashx" />
@@ -1703,10 +1618,6 @@
     <Content Include="Message\Handler\NoticeViewList.ashx" />
     <Content Include="Message\Handler\TaskList.ashx" />
     <Content Include="Member\Handler\TJTree.ashx" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="mobile\.project" />
     <Content Include="mobile\download.zip" />
     <Content Include="mobile\manifest.json" />

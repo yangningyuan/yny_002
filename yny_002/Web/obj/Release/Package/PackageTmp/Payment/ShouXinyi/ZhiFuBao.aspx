@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ZhiFuBao.aspx.cs" Inherits="qxjSoft.Web.Payment.ShouXinyi.ZhiFuBao" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ZhiFuBao.aspx.cs" Inherits="yny_002.Web.Payment.ShouXinyi.ZhiFuBao" %>
 
 <!DOCTYPE html>
 

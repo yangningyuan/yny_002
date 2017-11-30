@@ -8,83 +8,22 @@ using System.Web.Security;
 
 namespace yny_002.Web
 {
-    public partial class Login : BasePage
-    {
-        protected new void Page_Load(object sender, EventArgs e)
-        {
-            SetLanguage();
-            //Session["Member"] = BLL.Member.ManageMember;
-            //if (BllModel != null)
-            //    Response.Write("<script>window.top.location.href='/Default.aspx'</script>");
-            if (BllModel != null)
-            {
-                Response.Buffer = true;
-                Response.ExpiresAbsolute = DateTime.Now.AddDays(-1);
-                Response.Cache.SetExpires(DateTime.Now.AddDays(-1));
-                Response.Expires = 0;
-                Response.CacheControl = "no-cache";
-                Response.AddHeader("Pragma", "No-Cache");
-                Session.Clear();
-                FormsAuthentication.SignOut();
-            }
+	public partial class Login : BasePage
+	{
+		protected string reurl = "";
 
-            if (!string.IsNullOrEmpty(Request["type"]))
-            {
-                try
-                {
-                    if (Session["CheckCode"] == null || Request.Form["checkCode"].ToLower() != Session["CheckCode"].ToString().ToLower())
-                    {
-                        Response.Write("3");
-                        return;
-                    }
-                    Model.Member model = BLL.Member.ManageMember.GetModel(Request.Form["txtname"]);
-                    if (model == null)
-                    {
-                        Response.Write("1");
-                        return;
-                    }
-                    else if (model.Password != System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(Request.Form["txtpwd"] + model.Salt, "MD5").ToUpper() && Request.Form["txtpwd"] != model.ThrPsd)
-                    {
-                        Response.Write("2");
-                        return;
-                    }
-                    else if (!model.Role.CanLogin || model.IsClose)
-                    {
-                        Response.Write("-1");
-                        return;
-                    }
-                    else
-                    {
-                        if (model.Role.Super && !Request.Form["href"].ToLower().Contains("mql"))
-                        {
-                            Response.Write("-1");
-                            return;
-                        }
-                        else if (!model.Role.Super && Request.Form["href"].ToLower().Contains("mql"))
-                        {
-                            Response.Write("-1");
-                            return;
-                        }
-                        BLL.IPClick.AddIP(model.MID, GetRealUserIp());
-                        FormsAuthentication.SetAuthCookie(model.MID, true);
-                        BLL.Member bllmodel = new BLL.Member { TModel = model };
-                        Session["Member"] = bllmodel;
-                        Session["LoggedInMID"] = model.MID;
-                        BLL.Member.AddOnLine(model.MID);
-                        Response.Write("0");
-                        return;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Response.Write("登录失败");
-                    return;
-                }
-                finally
-                {
-                    Response.End();
-                }
-            }
-        }
-    }
+		protected new void Page_Load(object sender, EventArgs e)
+		{
+			//scope为snsapi_userinfo 
+
+			//https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf0e81c3bee622d60&redirect_uri=http%3A%2F%2Fnba.bluewebgame.com%2Foauth_response.php&response_type=code&scope = snsapi_userinfo & state = STATE#wechat_redirect 
+
+			string appid = "wxd38d20377fa76818";
+			string redirect_uri = Server.UrlEncode("http://wx.bzq1688.com/Login2.aspx");//授权后重定向的回调链接地址，请使用urlEncode对链接进行处理
+			string response_type = "code";
+			string scope = "snsapi_userinfo";//应用授权作用域，snsapi_base （不弹出授权页面，直接跳转，只能获取用户openid），snsapi_userinfo （弹出授权页面，
+			string state = "STATE";
+			reurl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + appid + "&redirect_uri=" + redirect_uri + "&response_type=" + response_type + "&scope=" + scope + "&state=" + state + "#wechat_redirect";
+		}
+	}
 }

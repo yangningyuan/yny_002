@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="KFList.ashx.cs" Class="qxjSoft.Web.ChangeMoney.Handler.KFList" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="KFList.ashx.cs" Class="yny_002.Web.ChangeMoney.Handler.KFList" %>
