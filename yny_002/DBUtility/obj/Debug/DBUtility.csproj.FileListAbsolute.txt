@@ -77,3 +77,4 @@ D:\工作目录\yny_002\yny_002\DBUtility\bin\Debug\MySql.Data.dll
 D:\工作目录\yny_002\yny_002\DBUtility\bin\Debug\ThoughtWorks.QRCode.dll
 D:\工作目录\yny_002\yny_002\DBUtility\obj\Debug\DBUtility.dll
 D:\工作目录\yny_002\yny_002\DBUtility\obj\Debug\DBUtility.pdb
+D:\工作目录\yny_002\yny_002\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
