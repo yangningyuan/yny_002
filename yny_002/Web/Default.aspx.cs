@@ -23,12 +23,12 @@ namespace yny_002.Web
             //else {
             //    Server.Transfer("/Admin/Index.aspx");
             //}
-            if (IsMobile())
+            if (TModel.Role.IsAdmin)
             {
-                Server.Transfer("/mobile/pages/personCenter.aspx");
+                Server.Transfer("/Admin/Index.aspx");
             }
             else {
-                Server.Transfer("/Admin/Index.aspx");
+                Server.Transfer("/mobile/pages/personCenter.aspx");
             }
         }
 

@@ -19,9 +19,9 @@
             <ul class="mui-table-view perInfo">
                 <li class="mui-table-view-cell mui-media">
                     <a href="bindPhone.html">
-                        <img class="mui-media-object mui-pull-left perImg" src="/mobile/img/perImg.png">
+                        <img class="mui-media-object mui-pull-left perImg" src="<%=TModel.Address %>">
                         <div class="mui-media-body">
-                            <p class="perName">昵称	</p>
+                            <p class="perName"><%=TModel.MID %>	</p>
                             <p class='mui-ellipsis toBindPh'><span class="iconfont">&#xe69f;</span>绑定手机号</p>
                         </div>
                     </a>
@@ -29,7 +29,7 @@
             </ul>
             <ul class="mui-table-view perlist">
                 <li class="mui-table-view-cell perlist1">
-                    <a class="mui-navigate-right" href="recharge.html"><span class="iconfont">&#xe635;</span>我要充值（余额：0.00）</a>
+                    <a class="mui-navigate-right" href="recharge.html"><span class="iconfont">&#xe635;</span>我要充值（余额：<%=TModel.MConfig.MJB %>）</a>
                 </li>
 
             </ul>

@@ -27,3 +27,7 @@ C:\Users\yny\Desktop\qxjSoft\CommonModel\bin\Debug\CommonModel.pdb
 C:\Users\yny\Desktop\qxjSoft\CommonModel\obj\Debug\CommonModel.dll
 C:\Users\yny\Desktop\qxjSoft\CommonModel\obj\Debug\CommonModel.pdb
 C:\Users\yny\Desktop\qxjSoft\CommonModel\obj\Debug\CommonModel.csprojResolveAssemblyReference.cache
+D:\工作目录\yny_002\yny_002\CommonModel\bin\Debug\CommonModel.dll
+D:\工作目录\yny_002\yny_002\CommonModel\bin\Debug\CommonModel.pdb
+D:\工作目录\yny_002\yny_002\CommonModel\obj\Debug\CommonModel.dll
+D:\工作目录\yny_002\yny_002\CommonModel\obj\Debug\CommonModel.pdb

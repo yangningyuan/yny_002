@@ -34,7 +34,7 @@
             } else {
                 $.ajax({
                     type: "post",
-                    url: "../Login.aspx?type=login",
+                    url: "/MQL/Login.aspx?type=login",
                     data: { txtname: $("#txtname").val(), txtpwd: $("#txtpwd").val(), checkCode: $("#checkCode").val(), href: window.location.href
                     },
                     async: true,

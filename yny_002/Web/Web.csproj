@@ -147,6 +147,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Index.aspx" />
     <Content Include="AjaxM\ajax.aspx" />
     <Content Include="autoaspx\hour.aspx" />
     <Content Include="autoaspx\minute.aspx" />
@@ -155,6 +156,7 @@
     <Content Include="ChangeMoney\HKChangeWY.aspx" />
     <Content Include="ChangeMoney\KFChange.aspx" />
     <Content Include="ChangeMoney\KFList.aspx" />
+    <Content Include="log.aspx" />
     <Content Include="Login2.aspx" />
     <Content Include="login\css\bootstrap.css" />
     <Content Include="login\css\login.css" />
@@ -205,10 +207,6 @@
     <Content Include="mobile\plugins\iconfont\iconfont.css" />
     <Content Include="mobile\plugins\iconfont\iconfont.js" />
     <Content Include="mobile\plugins\iconfont\iconfont.svg" />
-    <Content Include="Module\Investment\InvestApply.aspx" />
-    <Content Include="Module\Investment\InvestList.aspx" />
-    <Content Include="Module\Investment\InvestQuit.aspx" />
-    <Content Include="Module\Investment\js\invest.js" />
     <Content Include="Payment\banks\cft.gif" />
     <Content Include="Payment\banks\weixin.gif" />
     <Content Include="Payment\banks\yinlian.gif" />
@@ -912,6 +910,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AjaxM\ajax.aspx.cs">
       <DependentUpon>ajax.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -993,6 +998,13 @@
     <Compile Include="ChangeMoney\KFList.aspx.designer.cs">
       <DependentUpon>KFList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="log.aspx.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log.aspx.designer.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login2.aspx.cs">
       <DependentUpon>Login2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1036,39 +1048,6 @@
     </Compile>
     <Compile Include="mobile\pages\personCenter.aspx.designer.cs">
       <DependentUpon>personCenter.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Module\Investment\Handler\Ajax.ashx.cs">
-      <DependentUpon>Ajax.ashx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Module\Investment\Handler\InvestList.ashx.cs">
-      <DependentUpon>InvestList.ashx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Module\Investment\Handler\InvestQuit.ashx.cs">
-      <DependentUpon>InvestQuit.ashx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Module\Investment\InvestApply.aspx.cs">
-      <DependentUpon>InvestApply.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Module\Investment\InvestApply.aspx.designer.cs">
-      <DependentUpon>InvestApply.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Module\Investment\InvestList.aspx.cs">
-      <DependentUpon>InvestList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Module\Investment\InvestList.aspx.designer.cs">
-      <DependentUpon>InvestList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Module\Investment\InvestQuit.aspx.cs">
-      <DependentUpon>InvestQuit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Module\Investment\InvestQuit.aspx.designer.cs">
-      <DependentUpon>InvestQuit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Payment\ShouXinyi\Redirect.aspx.cs">
       <DependentUpon>Redirect.aspx</DependentUpon>
@@ -1561,7 +1540,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\" />
+    <Folder Include="Admin\css\" />
+    <Folder Include="Admin\find_password\" />
+    <Folder Include="Admin\fonts\" />
+    <Folder Include="Admin\images\" />
+    <Folder Include="Admin\js\" />
+    <Folder Include="Admin\login\" />
+    <Folder Include="Admin\login_phone\" />
+    <Folder Include="Admin\pop\" />
+    <Folder Include="Admin\regedit\" />
+    <Folder Include="Admin\UpLoadPic\" />
     <Folder Include="mobile\unpackage\" />
     <Folder Include="plugin\kindeditor\attached\image\" />
     <Folder Include="plugin\UEditor\net\upload1\" />
@@ -1610,9 +1598,6 @@
     <Content Include="plugin\kindeditor\asp.net\file_manager_json.ashx" />
     <Content Include="plugin\kindeditor\asp.net\upload_json.ashx" />
     <Content Include="ChangeMoney\Handler\ExportExcel.ashx" />
-    <Content Include="Module\Investment\Handler\Ajax.ashx" />
-    <Content Include="Module\Investment\Handler\InvestList.ashx" />
-    <Content Include="Module\Investment\Handler\InvestQuit.ashx" />
     <Content Include="AjaxM\Regedit.ashx" />
     <Content Include="Message\Handler\NoticeList.ashx" />
     <Content Include="Message\Handler\NoticeViewList.ashx" />

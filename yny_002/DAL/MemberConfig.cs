@@ -79,7 +79,7 @@ namespace yny_002.DAL
             strSql.Append(") ");
             strSql.AppendFormat(";select '{0}'", guid);
             SqlParameter[] parameters = {
-			            new SqlParameter("@MID", SqlDbType.VarChar,20) ,            
+			            new SqlParameter("@MID", SqlDbType.VarChar,100) ,            
                         new SqlParameter("@TakeOffMoney", SqlDbType.Decimal,9) ,            
                         new SqlParameter("@ReBuyMoney", SqlDbType.Decimal,9) ,            
                         new SqlParameter("@TotalTXMoney", SqlDbType.Decimal,9) ,            
@@ -181,7 +181,7 @@ namespace yny_002.DAL
             strSql.AppendFormat(" ;select '{0}'", guid);
 
             SqlParameter[] parameters = {
-			            new SqlParameter("@MID", SqlDbType.VarChar,20) ,            
+			            new SqlParameter("@MID", SqlDbType.VarChar,100) ,            
                         new SqlParameter("@TakeOffMoney", SqlDbType.Decimal,9) ,            
                         new SqlParameter("@ReBuyMoney", SqlDbType.Decimal,9) ,            
                         new SqlParameter("@TotalTXMoney", SqlDbType.Decimal,9) ,            

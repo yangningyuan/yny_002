@@ -51,5 +51,14 @@ namespace yny_002.Web.SysManage
                 return "操作成功";
             return "操作失败";
         }
-    }
+		protected override string btnAdd_Click()
+		{
+			if (BllModel.ReSetSys())
+			{
+				return "操作成功";
+			}
+			else
+				return "操作失败";
+		}
+	}
 }

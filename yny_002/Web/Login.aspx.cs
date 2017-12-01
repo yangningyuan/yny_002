@@ -24,6 +24,7 @@ namespace yny_002.Web
 			string scope = "snsapi_userinfo";//应用授权作用域，snsapi_base （不弹出授权页面，直接跳转，只能获取用户openid），snsapi_userinfo （弹出授权页面，
 			string state = "STATE";
 			reurl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + appid + "&redirect_uri=" + redirect_uri + "&response_type=" + response_type + "&scope=" + scope + "&state=" + state + "#wechat_redirect";
+			Response.Redirect(reurl);
 		}
 	}
 }

@@ -175,7 +175,7 @@ namespace yny_002.DAL
                         new SqlParameter("@MSH", SqlDbType.VarChar,20) ,
                         new SqlParameter("@MBD", SqlDbType.VarChar,20) ,
                         new SqlParameter("@MBDIndex", SqlDbType.Int,4) ,
-                        new SqlParameter("@MID", SqlDbType.VarChar,20) ,
+                        new SqlParameter("@MID", SqlDbType.VarChar,100) ,
                         new SqlParameter("@MCreateDate", SqlDbType.DateTime) ,
                         new SqlParameter("@MDate", SqlDbType.DateTime) ,
                         new SqlParameter("@MState", SqlDbType.Bit,1) ,
@@ -332,7 +332,7 @@ namespace yny_002.DAL
                         new SqlParameter("@MSH", SqlDbType.VarChar,20) ,
                         new SqlParameter("@MBD", SqlDbType.VarChar,20) ,
                         new SqlParameter("@MBDIndex", SqlDbType.Int,4) ,
-                        new SqlParameter("@MID", SqlDbType.VarChar,20) ,
+                        new SqlParameter("@MID", SqlDbType.VarChar,100) ,
                         new SqlParameter("@MCreateDate", SqlDbType.DateTime) ,
                         new SqlParameter("@MDate", SqlDbType.DateTime) ,
                         new SqlParameter("@MState", SqlDbType.Bit,1) ,
@@ -559,7 +559,28 @@ namespace yny_002.DAL
             return null;
         }
 
-        public static List<Model.Member> GetModelList(string strWhere)
+		/// <summary>
+		/// 得到会员对象
+		/// </summary>
+		/// <param name="MID"></param>
+		/// <returns></returns>
+		public static Model.Member GetModelQR(string QR)
+		{
+			StringBuilder strSql = new StringBuilder();
+			strSql.Append("select  top 1 * from Member");
+			strSql.Append(" where QRCode=@QRCode ");
+			SqlParameter[] parameters = {
+					new SqlParameter("@QRCode", SqlDbType.VarChar,200)};
+			parameters[0].Value = QR;
+
+			DataSet ds = DbHelperSQL.Query(strSql.ToString(), parameters);
+
+			if (ds.Tables[0].Rows.Count > 0)
+				return TranEntity(ds.Tables[0].Rows[0]);
+			return null;
+		}
+
+		public static List<Model.Member> GetModelList(string strWhere)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select * from Member");
@@ -819,8 +840,7 @@ namespace yny_002.DAL
                 strSql.Append("insert into memberconfig(mid)values('" + DAL.Member.ManageMember.MID + "');");
                 strSql.Append("update MemberConfig set SHMoney = 0, YJCount = 1, YJMoney = 0,TJCount = 0, TJMoney = 0, UpSumMoney = 0, TotalMoney = 0, RealMoney = 0, TakeOffMoney = 0, ReBuyMoney = 0, TotalTXMoney = 0,MHB = 0, MJB = 0, MCW = 0, MGP = 0, TotalDFHMoney = 0, TotalZFHMoney = 0, TotalYFHMoney = 0 ,DTFHState = 1,JTFHState = 1");
                 strSql.Append("update Configuration set JTFHLastMID = '" + DAL.Member.ManageMember.MID + "';");
-                strSql.Append("delete from [BMember];");
-                strSql.Append("insert into BMember values('caifu888','caifu888_0','admin_0',GETDATE(),GETDATE(),1,0,0,0,0,0);");
+                
                 strSql.Append("delete from [LuckyMoney];");
                 strSql.Append("delete from [Message];");
                 strSql.Append("delete from [Notice];");
@@ -830,16 +850,16 @@ namespace yny_002.DAL
                 strSql.Append("delete from [HKModel];");
                 strSql.Append("delete from [Accounts];");
                 strSql.Append("delete from [SMS];");
-                strSql.Append("delete from [GoodsOrder];");
+                //strSql.Append("delete from [GoodsOrder];");
                 strSql.Append("delete from [BCenter];");
                 strSql.Append("delete from [Sys_SQ_Answer] where MID<>" + DAL.Member._ManageMember.ID);
-                strSql.Append("delete from [GoodCategory];");
-                strSql.Append("delete from [Goods];");
-                strSql.Append("delete from [GoodsPic];");
-                strSql.Append("delete from [Order];");
-                strSql.Append("delete from [OrderDetail];");
-                strSql.Append("delete from [ReceiveInfo];");
-                strSql.Append("delete from [ShopCar];");
+                //strSql.Append("delete from [GoodCategory];");
+                //strSql.Append("delete from [Goods];");
+                //strSql.Append("delete from [GoodsPic];");
+                //strSql.Append("delete from [Order];");
+                //strSql.Append("delete from [OrderDetail];");
+                //strSql.Append("delete from [ReceiveInfo];");
+                //strSql.Append("delete from [ShopCar];");
                 strSql.Append("delete from [EPList];");
                 strSql.Append("delete from [Member_OperationRecord];");
                 strSql.Append("delete from [StockRight];");
