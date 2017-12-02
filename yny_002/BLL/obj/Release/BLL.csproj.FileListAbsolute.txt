@@ -93,3 +93,5 @@ D:\工作目录\yny_002\yny_002\BLL\bin\Release\CommonDAL.pdb
 D:\工作目录\yny_002\yny_002\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
 D:\工作目录\yny_002\yny_002\BLL\obj\Release\yny_002.BLL.dll
 D:\工作目录\yny_002\yny_002\BLL\obj\Release\yny_002.BLL.pdb
+D:\工作目录\yny_002\yny_002\BLL\bin\Release\LitJSON.dll
+D:\工作目录\yny_002\yny_002\BLL\bin\Release\Newtonsoft.Json.dll

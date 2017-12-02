@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <a href="">跳转2</a>
+        <a href="/Default.aspx">跳转...</a>
     </div>
     </form>
 </body>

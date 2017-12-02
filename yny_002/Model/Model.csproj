@@ -109,6 +109,7 @@
     <Compile Include="MConfigChange.cs" />
     <Compile Include="TicketBonus.cs" />
     <Compile Include="Time_Task.cs" />
+    <Compile Include="Token.cs" />
     <Compile Include="WebBase.cs" />
     <Compile Include="WebSetInfo.cs" />
     <Compile Include="ZFHTable.cs" />

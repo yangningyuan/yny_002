@@ -36,6 +36,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LitJSON">
+      <HintPath>..\文档\dll\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\文档\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -100,6 +106,7 @@
     <Compile Include="BankModel.cs" />
     <Compile Include="HKModel.cs" />
     <Compile Include="TicketBonus.cs" />
+    <Compile Include="Token.cs" />
     <Compile Include="WebBase.cs" />
     <Compile Include="WebSetInfo.cs" />
     <Compile Include="Accounts.cs" />

@@ -20,7 +20,7 @@ namespace yny_002.Web.autoaspx
                     string error = "";
                     try
                     {
-                        if (BLL.ChangeMoney.R_DFH())
+                        if (BLL.Token.GetToken()!="")
                         {
                             error += "操作成功！";
                         }

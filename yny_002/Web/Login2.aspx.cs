@@ -26,7 +26,7 @@ namespace yny_002.Web
 				string secret = "bfb5355bf94bc8f76ab3a3ba52223c54";
 				string serviceAddress = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxd38d20377fa76818&secret=" + secret + "&code=" + code + "&grant_type=authorization_code";
 				string accessjson = JsonGet(serviceAddress);
-
+				
 				//通过access_token和openid拉取用户信息
 				JsonData jsonData = JsonMapper.ToObject(accessjson);
 				//拉取信息

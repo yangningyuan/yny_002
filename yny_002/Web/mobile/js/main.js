@@ -1,5 +1,5 @@
 function activeFooter(i){
-	$("#footer").load("footer.html",function(){
+	$("#footer").load("/mobile/pages/footer.html",function(){
 		$("#footer li").children("a").removeClass("active")
 		$("#footer li").eq(i).children("a").addClass("active")
 	});

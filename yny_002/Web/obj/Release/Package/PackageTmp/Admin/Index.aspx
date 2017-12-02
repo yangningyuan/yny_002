@@ -138,35 +138,35 @@
 				
                     <div class="row-fluid">
                         <div class="col-md-3">
-                            <a class="info-box red-bg" href="javascript:callhtml('/OJ/ObjList.aspx','项目管理');onclickMenu()">
+                            <a class="info-box red-bg" href="javascript:callhtml('/member/List.aspx','会员列表');onclickMenu()">
                                 <i class="gold">
                                     <img src="/Admin/images/jf.png"></i>
                                 <!--<div class="count">0.00</div>-->
-                                <div class="title">项目管理 </div>
+                                <div class="title">会员列表 </div>
                             </a>
                         </div>
                         <div class="col-md-3">
-                            <a class="info-box green-bg" href="javascript:callhtml('/OJ/ObjSubTypeList.aspx','子类类别管理');onclickMenu()">
+                            <a class="info-box green-bg" href="javascript:callhtml('/ChangeMoney/GMList.aspx','充值查询');onclickMenu()">
                                 <i class="gold">
                                     <img src="/Admin/images/hl.png"></i>
                                 <!--<div class="count">0.00</div>-->
-                                <div class="title">子类类别管理 </div>
+                                <div class="title">充值查询 </div>
                             </a>
                         </div>
                         <div class="col-md-3">
-                            <a class="info-box blue-bg" href="javascript:callhtml('/OJ/FundTypeList.aspx','费用支出维护');onclickMenu()">
+                            <a class="info-box blue-bg" href="javascript:callhtml('/ChangeMoney/HKList.aspx','汇款管理');onclickMenu()">
                                 <i class="gold">
                                     <img src="/Admin/images/xj.png"></i>
                                 <!--<div class="count">0.00</div>-->
-                                <div class="title">费用支出维护 </div>
+                                <div class="title">汇款管理 </div>
                             </a>
                         </div>
                         <div class="col-md-3">
-                            <a class="info-box magenta-bg" href="javascript:callhtml('/OJ/DepartTypeList.aspx','批复部门管理');onclickMenu()">
+                            <a class="info-box magenta-bg" href="javascript:callhtml('/SysManage/WebSet.aspx','网站设置');onclickMenu()">
                                 <i class="gold">
                                     <img src="/Admin/images/wjb.png"></i>
                                 <!--<div class="count">0.00</div>-->
-                                <div class="title">批复部门管理</div>
+                                <div class="title">网站设置</div>
                             </a>
                         </div>
                     </div>

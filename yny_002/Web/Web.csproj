@@ -151,6 +151,8 @@
     <Content Include="AjaxM\ajax.aspx" />
     <Content Include="autoaspx\hour.aspx" />
     <Content Include="autoaspx\minute.aspx" />
+    <Content Include="CDZ\AddWXCode.aspx" />
+    <Content Include="CDZ\WXCodeList.aspx" />
     <Content Include="ChangeMoney\AdminPayHB.aspx" />
     <Content Include="ChangeMoney\HKChangeFlow.aspx" />
     <Content Include="ChangeMoney\HKChangeWY.aspx" />
@@ -182,22 +184,27 @@
     <Content Include="mobile\download\font_466056_3qzn6y9mf7z4zpvi\iconfont.svg" />
     <Content Include="mobile\img\perImg.png" />
     <Content Include="mobile\index.html" />
+    <Content Include="mobile\js\javascript_main.js" />
     <Content Include="mobile\js\jquery-1.11.3.js" />
     <Content Include="mobile\js\main.js" />
     <Content Include="mobile\js\mui.min.js" />
+    <Content Include="mobile\pages\about.aspx" />
     <Content Include="mobile\pages\aboutUs.html" />
     <Content Include="mobile\pages\bindPhone.html" />
     <Content Include="mobile\pages\dynamic.html" />
     <Content Include="mobile\pages\electricize.html" />
     <Content Include="mobile\pages\footer.html" />
+    <Content Include="mobile\pages\help.aspx" />
     <Content Include="mobile\pages\help.html" />
     <Content Include="mobile\pages\lastNews.html" />
     <Content Include="mobile\pages\newsDetail.html" />
+    <Content Include="mobile\pages\Pay.aspx" />
     <Content Include="mobile\pages\personCenter.aspx" />
     <Content Include="mobile\pages\personCenter.html" />
     <Content Include="mobile\pages\recharge.html" />
     <Content Include="mobile\pages\rechargeElectricityList.html" />
     <Content Include="mobile\pages\rechargeList.html" />
+    <Content Include="mobile\pages\smcd.aspx" />
     <Content Include="mobile\pages\success.html" />
     <Content Include="mobile\pages\suggestion.html" />
     <Content Include="mobile\plugins\iconfont\demo.css" />
@@ -952,6 +959,20 @@
     <Compile Include="autoaspx\minute.aspx.designer.cs">
       <DependentUpon>minute.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CDZ\AddWXCode.aspx.cs">
+      <DependentUpon>AddWXCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDZ\AddWXCode.aspx.designer.cs">
+      <DependentUpon>AddWXCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDZ\WXCodeList.aspx.cs">
+      <DependentUpon>WXCodeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDZ\WXCodeList.aspx.designer.cs">
+      <DependentUpon>WXCodeList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ChangeMoney\AdminPayHB.aspx.cs">
       <DependentUpon>AdminPayHB.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1042,12 +1063,40 @@
       <DependentUpon>TaskList.ashx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="mobile\pages\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\pages\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\pages\help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\pages\help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\pages\Pay.aspx.cs">
+      <DependentUpon>Pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\pages\Pay.aspx.designer.cs">
+      <DependentUpon>Pay.aspx</DependentUpon>
+    </Compile>
     <Compile Include="mobile\pages\personCenter.aspx.cs">
       <DependentUpon>personCenter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="mobile\pages\personCenter.aspx.designer.cs">
       <DependentUpon>personCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\pages\smcd.aspx.cs">
+      <DependentUpon>smcd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\pages\smcd.aspx.designer.cs">
+      <DependentUpon>smcd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Payment\ShouXinyi\Redirect.aspx.cs">
       <DependentUpon>Redirect.aspx</DependentUpon>
@@ -1619,6 +1668,7 @@
     <None Include="plugin\ztree\demo\en\asyncData\getNodes.php" />
     <None Include="plugin\ztree\demo\en\asyncData\getNodesForBigData.php" />
     <Content Include="SysManage\Language\Handler\LanguageTypeList.ashx" />
+    <None Include="Properties\PublishProfiles\yny_002.pubxml" />
     <None Include="Properties\PublishProfiles\zx326.pubxml" />
   </ItemGroup>
   <PropertyGroup>

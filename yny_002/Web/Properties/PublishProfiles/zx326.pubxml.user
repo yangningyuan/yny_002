@@ -217,7 +217,7 @@
       <publishTime>06/14/2017 17:29:33</publishTime>
     </File>
     <File Include="Admin/Index.aspx">
-      <publishTime>12/01/2017 22:50:30</publishTime>
+      <publishTime>11/27/2017 18:55:13</publishTime>
     </File>
     <File Include="Admin/js/ajaxForm.js">
       <publishTime>03/01/2017 22:41:22</publishTime>
@@ -562,16 +562,16 @@
       <publishTime>11/27/2017 18:55:16</publishTime>
     </File>
     <File Include="bin/yny_002.BLL.dll">
-      <publishTime>12/01/2017 22:58:14</publishTime>
+      <publishTime>12/02/2017 16:03:28</publishTime>
     </File>
     <File Include="bin/yny_002.DAL.dll">
-      <publishTime>12/01/2017 22:58:14</publishTime>
+      <publishTime>12/02/2017 16:03:27</publishTime>
     </File>
     <File Include="bin/yny_002.Model.dll">
-      <publishTime>11/30/2017 22:38:37</publishTime>
+      <publishTime>12/02/2017 16:03:27</publishTime>
     </File>
     <File Include="bin/yny_002.Web.dll">
-      <publishTime>12/01/2017 22:58:15</publishTime>
+      <publishTime>12/02/2017 16:16:03</publishTime>
     </File>
     <File Include="bin/zx326.BLL.dll">
       <publishTime>07/29/2017 11:18:17</publishTime>
@@ -681,6 +681,9 @@
     <File Include="Global.asax">
       <publishTime>11/27/2017 18:55:13</publishTime>
     </File>
+    <File Include="log.aspx">
+      <publishTime>12/02/2017 00:04:35</publishTime>
+    </File>
     <File Include="Login.aspx">
       <publishTime>11/30/2017 22:37:03</publishTime>
     </File>
@@ -724,7 +727,7 @@
       <publishTime>11/27/2017 18:55:14</publishTime>
     </File>
     <File Include="Login2.aspx">
-      <publishTime>11/30/2017 22:53:21</publishTime>
+      <publishTime>12/02/2017 00:20:00</publishTime>
     </File>
     <File Include="Member/Add.aspx">
       <publishTime>11/27/2017 18:55:13</publishTime>
@@ -1240,7 +1243,7 @@
       <publishTime>06/07/2017 09:44:24</publishTime>
     </File>
     <File Include="mobile/js/javascript_main.js">
-      <publishTime>06/30/2017 16:39:59</publishTime>
+      <publishTime>12/02/2017 12:03:26</publishTime>
     </File>
     <File Include="mobile/js/javascript_pop.js">
       <publishTime>06/17/2017 15:38:23</publishTime>
@@ -1264,7 +1267,7 @@
       <publishTime>06/07/2017 14:15:20</publishTime>
     </File>
     <File Include="mobile/js/main.js">
-      <publishTime>11/27/2017 18:55:14</publishTime>
+      <publishTime>12/02/2017 11:38:23</publishTime>
     </File>
     <File Include="mobile/js/main1.js">
       <publishTime>06/07/2017 09:48:39</publishTime>
@@ -1329,6 +1332,9 @@
     <File Include="mobile/manifest.json">
       <publishTime>11/27/2017 18:55:14</publishTime>
     </File>
+    <File Include="mobile/pages/about.aspx">
+      <publishTime>12/02/2017 14:07:23</publishTime>
+    </File>
     <File Include="mobile/pages/aboutUs.html">
       <publishTime>11/27/2017 18:55:14</publishTime>
     </File>
@@ -1342,10 +1348,13 @@
       <publishTime>11/27/2017 18:55:14</publishTime>
     </File>
     <File Include="mobile/pages/footer.html">
-      <publishTime>11/27/2017 18:55:14</publishTime>
+      <publishTime>12/02/2017 11:51:53</publishTime>
+    </File>
+    <File Include="mobile/pages/help.aspx">
+      <publishTime>12/02/2017 14:07:00</publishTime>
     </File>
     <File Include="mobile/pages/help.html">
-      <publishTime>11/27/2017 18:55:14</publishTime>
+      <publishTime>12/02/2017 13:52:49</publishTime>
     </File>
     <File Include="mobile/pages/lastNews.html">
       <publishTime>11/27/2017 18:55:14</publishTime>
@@ -1353,8 +1362,11 @@
     <File Include="mobile/pages/newsDetail.html">
       <publishTime>11/27/2017 18:55:14</publishTime>
     </File>
+    <File Include="mobile/pages/Pay.aspx">
+      <publishTime>12/02/2017 14:08:14</publishTime>
+    </File>
     <File Include="mobile/pages/personCenter.aspx">
-      <publishTime>12/01/2017 21:35:19</publishTime>
+      <publishTime>12/02/2017 16:01:20</publishTime>
     </File>
     <File Include="mobile/pages/personCenter.html">
       <publishTime>11/27/2017 18:55:14</publishTime>
@@ -1367,6 +1379,9 @@
     </File>
     <File Include="mobile/pages/rechargeList.html">
       <publishTime>11/27/2017 18:55:14</publishTime>
+    </File>
+    <File Include="mobile/pages/smcd.aspx">
+      <publishTime>12/02/2017 14:07:50</publishTime>
     </File>
     <File Include="mobile/pages/success.html">
       <publishTime>11/27/2017 18:55:14</publishTime>
@@ -3691,7 +3706,7 @@
       <publishTime>11/27/2017 18:55:13</publishTime>
     </File>
     <File Include="SysManage/WebSet.aspx">
-      <publishTime>11/27/2017 18:55:13</publishTime>
+      <publishTime>12/02/2017 00:25:20</publishTime>
     </File>
     <File Include="tel/css/style.css">
       <publishTime>11/27/2017 18:55:16</publishTime>
