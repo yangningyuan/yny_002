@@ -64,6 +64,8 @@
     <Compile Include="ConfigDictionaryNew.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="Contents.cs" />
+    <Compile Include="C_Code.cs" />
+    <Compile Include="C_GType.cs" />
     <Compile Include="DepartType.cs" />
     <Compile Include="Email.cs" />
     <Compile Include="EP\EPConfig.cs" />

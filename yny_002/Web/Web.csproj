@@ -151,7 +151,9 @@
     <Content Include="AjaxM\ajax.aspx" />
     <Content Include="autoaspx\hour.aspx" />
     <Content Include="autoaspx\minute.aspx" />
+    <Content Include="CDZ\AddGType.aspx" />
     <Content Include="CDZ\AddWXCode.aspx" />
+    <Content Include="CDZ\GTypeList.aspx" />
     <Content Include="CDZ\WXCodeList.aspx" />
     <Content Include="ChangeMoney\AdminPayHB.aspx" />
     <Content Include="ChangeMoney\HKChangeFlow.aspx" />
@@ -171,8 +173,6 @@
     <Content Include="login\images\logo .png" />
     <Content Include="login\images\logo.png" />
     <Content Include="login\images\yanzhengma.jpg" />
-    <Content Include="Member\MyLink.aspx" />
-    <Content Include="Member\TJTree.aspx" />
     <Content Include="mobile\css\mui.min.css" />
     <Content Include="mobile\css\style.css" />
     <Content Include="mobile\download\font_466056_3qzn6y9mf7z4zpvi\demo.css" />
@@ -214,17 +214,6 @@
     <Content Include="mobile\plugins\iconfont\iconfont.css" />
     <Content Include="mobile\plugins\iconfont\iconfont.js" />
     <Content Include="mobile\plugins\iconfont\iconfont.svg" />
-    <Content Include="Payment\banks\cft.gif" />
-    <Content Include="Payment\banks\weixin.gif" />
-    <Content Include="Payment\banks\yinlian.gif" />
-    <Content Include="Payment\banks\zhifubao.gif" />
-    <Content Include="Payment\ShouXinyi\bin\ClassHmac2003.dll" />
-    <Content Include="Payment\ShouXinyi\bin\RSAForDotNet03.dll" />
-    <Content Include="Payment\ShouXinyi\Redirect.aspx" />
-    <Content Include="Payment\ShouXinyi\ReturnAsyn.aspx" />
-    <Content Include="Payment\ShouXinyi\ReturnSyn.aspx" />
-    <Content Include="Payment\ShouXinyi\WeiXin.aspx" />
-    <Content Include="Payment\ShouXinyi\ZhiFuBao.aspx" />
     <Content Include="plugin\layer\extend\layer.ext.js" />
     <Content Include="plugin\layer\layer.js" />
     <Content Include="plugin\layer\skin\default\icon-ext.png" />
@@ -486,23 +475,6 @@
     <Content Include="plugin\qrcode\index.html" />
     <Content Include="plugin\qrcode\jquery.min.js" />
     <Content Include="plugin\qrcode\jquery.qrcode.min.js" />
-    <Content Include="Regedit\css\bootstrap.css" />
-    <Content Include="Regedit\css\style.css" />
-    <Content Include="Regedit\images\bg.jpg" />
-    <Content Include="Regedit\images\fac.ico" />
-    <Content Include="Regedit\images\fjj.jpg" />
-    <Content Include="Regedit\images\logo.png" />
-    <Content Include="Regedit\Index.aspx" />
-    <Content Include="Regedit\js\common.js" />
-    <Content Include="Regedit\js\jquery-1.8.2.js" />
-    <Content Include="Regedit\redirect.htm" />
-    <Content Include="SecurityCenter\FD\css\bootstrap.css" />
-    <Content Include="SecurityCenter\FD\css\style.css" />
-    <Content Include="SecurityCenter\FD\images\fac.ico" />
-    <Content Include="SecurityCenter\FD\images\fjj.jpg" />
-    <Content Include="SecurityCenter\FD\images\logo.png" />
-    <Content Include="SecurityCenter\Findpwd.aspx" />
-    <Content Include="SecurityCenter\FindPwdByAnswer.aspx" />
     <Content Include="SysManage\BankInfo.aspx" />
     <Content Include="SysManage\Language\DownLoad.aspx" />
     <Content Include="SysManage\Language\Edit.aspx" />
@@ -538,8 +510,6 @@
     <Content Include="Member\MemberYJList.aspx" />
     <Content Include="Member\Modify.aspx" />
     <Content Include="Member\ModifyMember.aspx" />
-    <Content Include="Member\TJList.aspx" />
-    <Content Include="Member\TJNet.aspx" />
     <Content Include="Member\View.aspx" />
     <Content Include="Message\NoticeAdd.aspx" />
     <Content Include="Message\NoticeList.aspx" />
@@ -548,54 +518,6 @@
     <Content Include="Message\NoticeViewList.aspx" />
     <Content Include="Message\TaskAdd.aspx" />
     <Content Include="Message\TaskList.aspx" />
-    <Content Include="Payment\banks\abc.gif" />
-    <Content Include="Payment\banks\acbc.gif" />
-    <Content Include="Payment\banks\bc.gif" />
-    <Content Include="Payment\banks\beijing.gif" />
-    <Content Include="Payment\banks\buohai.gif" />
-    <Content Include="Payment\banks\cbc.gif" />
-    <Content Include="Payment\banks\ccb.gif" />
-    <Content Include="Payment\banks\ceb.gif" />
-    <Content Include="Payment\banks\cft.png" />
-    <Content Include="Payment\banks\cib.gif" />
-    <Content Include="Payment\banks\cmbc.gif" />
-    <Content Include="Payment\banks\cmsb.gif" />
-    <Content Include="Payment\banks\dongya.gif" />
-    <Content Include="Payment\banks\gdb.gif" />
-    <Content Include="Payment\banks\gongshang.gif" />
-    <Content Include="Payment\banks\guangda.gif" />
-    <Content Include="Payment\banks\guangfa.gif" />
-    <Content Include="Payment\banks\guangnongxin.gif" />
-    <Content Include="Payment\banks\guangzhoushangye.gif" />
-    <Content Include="Payment\banks\hangzhou.gif" />
-    <Content Include="Payment\banks\hebei.gif" />
-    <Content Include="Payment\banks\huaxia.gif" />
-    <Content Include="Payment\banks\hykj.jpg" />
-    <Content Include="Payment\banks\jianshe.gif" />
-    <Content Include="Payment\banks\jiaotong.gif" />
-    <Content Include="Payment\banks\minsheng.gif" />
-    <Content Include="Payment\banks\nanjing.gif" />
-    <Content Include="Payment\banks\nanyanbank.gif" />
-    <Content Include="Payment\banks\ningbo.gif" />
-    <Content Include="Payment\banks\nongcunshangye.gif" />
-    <Content Include="Payment\banks\nongye.gif" />
-    <Content Include="Payment\banks\pingan.gif" />
-    <Content Include="Payment\banks\psboc.gif" />
-    <Content Include="Payment\banks\sdbcl.gif" />
-    <Content Include="Payment\banks\sdbcl_1.gif" />
-    <Content Include="Payment\banks\shanghaibank.gif" />
-    <Content Include="Payment\banks\shangnongshang.gif" />
-    <Content Include="Payment\banks\shangpufa.gif" />
-    <Content Include="Payment\banks\shenfa.gif" />
-    <Content Include="Payment\banks\shundexin.gif" />
-    <Content Include="Payment\banks\spdb.gif" />
-    <Content Include="Payment\banks\tailong.gif" />
-    <Content Include="Payment\banks\xingye.gif" />
-    <Content Include="Payment\banks\youzheng.gif" />
-    <Content Include="Payment\banks\zhaohang.gif" />
-    <Content Include="Payment\banks\zheshang.gif" />
-    <Content Include="Payment\banks\zhongguo.gif" />
-    <Content Include="Payment\banks\zhongxin.gif" />
     <Content Include="plugin\date\calendar.js" />
     <Content Include="plugin\date\lang\en.js" />
     <Content Include="plugin\date\lang\zh-cn.js" />
@@ -887,8 +809,6 @@
     <Content Include="plugin\ZeroClipboard\ZeroClipboard.js" />
     <Content Include="plugin\ZeroClipboard\ZeroClipboard.min.js" />
     <Content Include="plugin\ZeroClipboard\ZeroClipboard.swf" />
-    <Content Include="SecurityCenter\ModifyPwd.aspx" />
-    <Content Include="SecurityCenter\ModifySecPwd.aspx" />
     <Content Include="SysManage\Configuration.aspx" />
     <Content Include="SysManage\GrantPowers.aspx" />
     <Content Include="SysManage\Language\TypeEdit.aspx" />
@@ -931,9 +851,6 @@
     <Compile Include="AjaxM\ajax.aspx.designer.cs">
       <DependentUpon>ajax.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AjaxM\Regedit.ashx.cs">
-      <DependentUpon>Regedit.ashx</DependentUpon>
-    </Compile>
     <Compile Include="App_Code\BasePageNotLogin.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -959,12 +876,34 @@
     <Compile Include="autoaspx\minute.aspx.designer.cs">
       <DependentUpon>minute.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CDZ\AddGType.aspx.cs">
+      <DependentUpon>AddGType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDZ\AddGType.aspx.designer.cs">
+      <DependentUpon>AddGType.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CDZ\AddWXCode.aspx.cs">
       <DependentUpon>AddWXCode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CDZ\AddWXCode.aspx.designer.cs">
       <DependentUpon>AddWXCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDZ\GTypeList.aspx.cs">
+      <DependentUpon>GTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDZ\GTypeList.aspx.designer.cs">
+      <DependentUpon>GTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDZ\Handler\CodeList.ashx.cs">
+      <DependentUpon>CodeList.ashx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDZ\Handler\GTypeList.ashx.cs">
+      <DependentUpon>GTypeList.ashx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CDZ\WXCodeList.aspx.cs">
       <DependentUpon>WXCodeList.aspx</DependentUpon>
@@ -983,10 +922,6 @@
     <Compile Include="ChangeMoney\ExportExcel\AgentPayFileBuilder.cs" />
     <Compile Include="ChangeMoney\ExportExcel\AgentPayInfo.cs" />
     <Compile Include="ChangeMoney\ExportExcel\OrderItemInfo.cs" />
-    <Compile Include="ChangeMoney\Handler\ExportExcel.ashx.cs">
-      <DependentUpon>ExportExcel.ashx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="ChangeMoney\Handler\KFList.ashx.cs">
       <DependentUpon>KFList.ashx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1037,20 +972,6 @@
       <DependentUpon>TJTree.ashx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Member\MyLink.aspx.cs">
-      <DependentUpon>MyLink.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Member\MyLink.aspx.designer.cs">
-      <DependentUpon>MyLink.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Member\TJTree.aspx.cs">
-      <DependentUpon>TJTree.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Member\TJTree.aspx.designer.cs">
-      <DependentUpon>TJTree.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Message\Handler\NoticeList.ashx.cs">
       <DependentUpon>NoticeList.ashx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1098,65 +1019,8 @@
     <Compile Include="mobile\pages\smcd.aspx.designer.cs">
       <DependentUpon>smcd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Payment\ShouXinyi\Redirect.aspx.cs">
-      <DependentUpon>Redirect.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Payment\ShouXinyi\Redirect.aspx.designer.cs">
-      <DependentUpon>Redirect.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Payment\ShouXinyi\ReturnAsyn.aspx.cs">
-      <DependentUpon>ReturnAsyn.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Payment\ShouXinyi\ReturnAsyn.aspx.designer.cs">
-      <DependentUpon>ReturnAsyn.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Payment\ShouXinyi\ReturnSyn.aspx.cs">
-      <DependentUpon>ReturnSyn.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Payment\ShouXinyi\ReturnSyn.aspx.designer.cs">
-      <DependentUpon>ReturnSyn.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Payment\ShouXinyi\ShouXinYi.cs" />
-    <Compile Include="Payment\ShouXinyi\WeiXin.aspx.cs">
-      <DependentUpon>WeiXin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Payment\ShouXinyi\WeiXin.aspx.designer.cs">
-      <DependentUpon>WeiXin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Payment\ShouXinyi\ZhiFuBao.aspx.cs">
-      <DependentUpon>ZhiFuBao.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Payment\ShouXinyi\ZhiFuBao.aspx.designer.cs">
-      <DependentUpon>ZhiFuBao.aspx</DependentUpon>
-    </Compile>
     <Compile Include="plugin\kindeditor\asp.net\upload_json.ashx.cs">
       <DependentUpon>upload_json.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Regedit\Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Regedit\Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SecurityCenter\Findpwd.aspx.cs">
-      <DependentUpon>Findpwd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SecurityCenter\Findpwd.aspx.designer.cs">
-      <DependentUpon>Findpwd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SecurityCenter\FindPwdByAnswer.aspx.cs">
-      <DependentUpon>FindPwdByAnswer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SecurityCenter\FindPwdByAnswer.aspx.designer.cs">
-      <DependentUpon>FindPwdByAnswer.aspx</DependentUpon>
     </Compile>
     <Compile Include="SysManage\BankInfo.aspx.cs">
       <DependentUpon>BankInfo.aspx</DependentUpon>
@@ -1396,20 +1260,6 @@
     <Compile Include="Member\ModifyMember.aspx.designer.cs">
       <DependentUpon>ModifyMember.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Member\TJList.aspx.cs">
-      <DependentUpon>TJList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Member\TJList.aspx.designer.cs">
-      <DependentUpon>TJList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Member\TJNet.aspx.cs">
-      <DependentUpon>TJNet.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Member\TJNet.aspx.designer.cs">
-      <DependentUpon>TJNet.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Member\View.aspx.cs">
       <DependentUpon>View.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1496,20 +1346,6 @@
       <DependentUpon>JTFHAccounts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SecurityCenter\ModifyPwd.aspx.cs">
-      <DependentUpon>ModifyPwd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SecurityCenter\ModifyPwd.aspx.designer.cs">
-      <DependentUpon>ModifyPwd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SecurityCenter\ModifySecPwd.aspx.cs">
-      <DependentUpon>ModifySecPwd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SecurityCenter\ModifySecPwd.aspx.designer.cs">
-      <DependentUpon>ModifySecPwd.aspx</DependentUpon>
-    </Compile>
     <Compile Include="SysManage\Configuration.aspx.cs">
       <DependentUpon>Configuration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1604,7 +1440,6 @@
     <Folder Include="plugin\UEditor\net\upload1\" />
     <Folder Include="plugin\UEditor\net\upload\2013-06-25\" />
     <Folder Include="PrizePool\Handler\" />
-    <Folder Include="SecurityCenter\Handler\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bll\BLL.csproj">
@@ -1646,8 +1481,6 @@
     <Content Include="ChangeMoney\Handler\KFList.ashx" />
     <Content Include="plugin\kindeditor\asp.net\file_manager_json.ashx" />
     <Content Include="plugin\kindeditor\asp.net\upload_json.ashx" />
-    <Content Include="ChangeMoney\Handler\ExportExcel.ashx" />
-    <Content Include="AjaxM\Regedit.ashx" />
     <Content Include="Message\Handler\NoticeList.ashx" />
     <Content Include="Message\Handler\NoticeViewList.ashx" />
     <Content Include="Message\Handler\TaskList.ashx" />
@@ -1663,6 +1496,8 @@
     <Content Include="mobile\plugins\iconfont\iconfont.eot" />
     <Content Include="mobile\plugins\iconfont\iconfont.ttf" />
     <Content Include="mobile\plugins\iconfont\iconfont.woff" />
+    <Content Include="CDZ\Handler\GTypeList.ashx" />
+    <Content Include="CDZ\Handler\CodeList.ashx" />
     <None Include="plugin\ztree\demo\cn\asyncData\getNodes.php" />
     <None Include="plugin\ztree\demo\cn\asyncData\getNodesForBigData.php" />
     <None Include="plugin\ztree\demo\en\asyncData\getNodes.php" />

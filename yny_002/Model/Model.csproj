@@ -58,6 +58,8 @@
     <Compile Include="ChangeType.cs" />
     <Compile Include="ConfigDictionaryNew.cs" />
     <Compile Include="ConfigParameter\IPClick.cs" />
+    <Compile Include="C_Code.cs" />
+    <Compile Include="C_GType.cs" />
     <Compile Include="DepartType.cs" />
     <Compile Include="EP\EPConfig.cs" />
     <Compile Include="EP\EPJX.cs" />
