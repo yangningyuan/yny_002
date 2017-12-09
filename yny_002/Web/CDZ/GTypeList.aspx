@@ -19,8 +19,7 @@
                         有效</a><a href="javascript:void(0)" onclick="SearchByState('false',this);" class="btn btn-success">无效</a></div>--%>
             <div class="search" id="DivSearch" runat="server">
                 <input type="button" value="查询" class="ssubmit" onclick="SearchByCondition()" />
-                <input name="txtKey" data-name="txtKey" id="mKey" value="请输入组名" onfocus="if (value =='请输入组名'){value =''}"
-                    onblur="if (value ==''){value='请输入组名'}" type="text" class="sinput" />
+                <input name="txtKey" data-name="txtKey" id="mKey"  type="text" class="sinput" />
                <%-- <input type="text" name="txtKey" data-name="txtKey" id="endDate" value="截止日期" onfocus="if (value =='截止日期'){value =''}"
                     class="daycash_input" style="width: 120px;" onclick="WdatePicker({minDate:'#F{$dp.$D(\'startDate\')}'})" />
                 <input type="text" name="txtKey" data-name="txtKey" id="startDate" value="开始日期" onfocus="if (value =='开始日期'){value =''}"

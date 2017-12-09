@@ -21,18 +21,18 @@ namespace yny_002.DAL
 		{
 			StringBuilder strSql = new StringBuilder();
 			strSql.Append("insert into C_Code(");
-			strSql.Append("C_ID,C_CJCodeID,C_GType,C_State,C_Path,C_Create)");
+			strSql.Append("C_CodeID,C_CJCodeID,C_GType,C_State,C_Path,C_Create)");
 			strSql.Append(" values (");
-			strSql.Append("@C_ID,@C_CJCodeID,@C_GType,@C_State,@C_Path,@C_Create)");
+			strSql.Append("@C_CodeID,@C_CJCodeID,@C_GType,@C_State,@C_Path,@C_Create)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
-					new SqlParameter("@C_ID", SqlDbType.Int,4),
+					new SqlParameter("@C_CodeID", SqlDbType.Int,4),
 					new SqlParameter("@C_CJCodeID", SqlDbType.VarChar,250),
 					new SqlParameter("@C_GType", SqlDbType.Int,4),
 					new SqlParameter("@C_State", SqlDbType.Int,4),
 					new SqlParameter("@C_Path", SqlDbType.VarChar,500),
 					new SqlParameter("@C_Create", SqlDbType.DateTime)};
-			parameters[0].Value = model.C_ID;
+			parameters[0].Value = model.C_CodeID;
 			parameters[1].Value = model.C_CJCodeID;
 			parameters[2].Value = model.C_GType;
 			parameters[3].Value = model.C_State;
@@ -56,27 +56,28 @@ namespace yny_002.DAL
 		{
 			StringBuilder strSql = new StringBuilder();
 			strSql.Append("update C_Code set ");
+			strSql.Append("C_CodeID=@C_CodeID,");
 			strSql.Append("C_CJCodeID=@C_CJCodeID,");
 			strSql.Append("C_GType=@C_GType,");
 			strSql.Append("C_State=@C_State,");
 			strSql.Append("C_Path=@C_Path,");
 			strSql.Append("C_Create=@C_Create");
-			strSql.Append(" where C_CodeID=@C_CodeID");
+			strSql.Append(" where C_ID=@C_ID");
 			SqlParameter[] parameters = {
+					new SqlParameter("@C_CodeID", SqlDbType.Int,4),
 					new SqlParameter("@C_CJCodeID", SqlDbType.VarChar,250),
 					new SqlParameter("@C_GType", SqlDbType.Int,4),
 					new SqlParameter("@C_State", SqlDbType.Int,4),
 					new SqlParameter("@C_Path", SqlDbType.VarChar,500),
 					new SqlParameter("@C_Create", SqlDbType.DateTime),
-					new SqlParameter("@C_ID", SqlDbType.Int,4),
-					new SqlParameter("@C_CodeID", SqlDbType.Int,4)};
-			parameters[0].Value = model.C_CJCodeID;
-			parameters[1].Value = model.C_GType;
-			parameters[2].Value = model.C_State;
-			parameters[3].Value = model.C_Path;
-			parameters[4].Value = model.C_Create;
-			parameters[5].Value = model.C_ID;
-			parameters[6].Value = model.C_CodeID;
+					new SqlParameter("@C_ID", SqlDbType.Int,4)};
+			parameters[0].Value = model.C_CodeID;
+			parameters[1].Value = model.C_CJCodeID;
+			parameters[2].Value = model.C_GType;
+			parameters[3].Value = model.C_State;
+			parameters[4].Value = model.C_Path;
+			parameters[5].Value = model.C_Create;
+			parameters[6].Value = model.C_ID;
 
 			int rows = DbHelperSQL.ExecuteSql(strSql.ToString(), parameters);
 			if (rows > 0)

@@ -71,6 +71,7 @@
     <Compile Include="EP\EPConfig.cs" />
     <Compile Include="EP\EPJX.cs" />
     <Compile Include="EP\EPList.cs" />
+    <Compile Include="Event\ResponseMessage.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="FundType.cs" />
     <Compile Include="ImpType.cs" />

@@ -814,6 +814,7 @@
     <Content Include="SysManage\Language\TypeEdit.aspx" />
     <Content Include="SysManage\Language\TypeList.aspx" />
     <Content Include="SysManage\MenuEdit.aspx" />
+    <Content Include="SysManage\MenuSet.aspx" />
     <Content Include="SysManage\Out.aspx" />
     <Content Include="SysManage\RolePowers.aspx" />
     <Content Include="SysManage\WebSet.aspx" />
@@ -897,6 +898,9 @@
     <Compile Include="CDZ\GTypeList.aspx.designer.cs">
       <DependentUpon>GTypeList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CDZ\Handler\cdzserver.ashx.cs">
+      <DependentUpon>cdzserver.ashx</DependentUpon>
+    </Compile>
     <Compile Include="CDZ\Handler\CodeList.ashx.cs">
       <DependentUpon>CodeList.ashx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -904,6 +908,9 @@
     <Compile Include="CDZ\Handler\GTypeList.ashx.cs">
       <DependentUpon>GTypeList.ashx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDZ\Handler\Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
     </Compile>
     <Compile Include="CDZ\WXCodeList.aspx.cs">
       <DependentUpon>WXCodeList.aspx</DependentUpon>
@@ -1381,6 +1388,13 @@
     <Compile Include="SysManage\MenuEdit.aspx.designer.cs">
       <DependentUpon>MenuEdit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SysManage\MenuSet.aspx.cs">
+      <DependentUpon>MenuSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\MenuSet.aspx.designer.cs">
+      <DependentUpon>MenuSet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SysManage\Out.aspx.cs">
       <DependentUpon>Out.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1435,6 +1449,8 @@
     <Folder Include="Admin\pop\" />
     <Folder Include="Admin\regedit\" />
     <Folder Include="Admin\UpLoadPic\" />
+    <Folder Include="CDZ\err_log\" />
+    <Folder Include="codeimg\" />
     <Folder Include="mobile\unpackage\" />
     <Folder Include="plugin\kindeditor\attached\image\" />
     <Folder Include="plugin\UEditor\net\upload1\" />
@@ -1498,6 +1514,8 @@
     <Content Include="mobile\plugins\iconfont\iconfont.woff" />
     <Content Include="CDZ\Handler\GTypeList.ashx" />
     <Content Include="CDZ\Handler\CodeList.ashx" />
+    <Content Include="CDZ\Handler\cdzserver.ashx" />
+    <Content Include="CDZ\Handler\Handler1.ashx" />
     <None Include="plugin\ztree\demo\cn\asyncData\getNodes.php" />
     <None Include="plugin\ztree\demo\cn\asyncData\getNodesForBigData.php" />
     <None Include="plugin\ztree\demo\en\asyncData\getNodes.php" />

@@ -11,7 +11,18 @@ namespace yny_002.Web.CDZ
 	{
 		protected override string btnAdd_Click()
 		{
-			return base.btnAdd_Click();
+			string gname = Request.Form["txtName"];
+			string gpenson = Request.Form["txtPenson"];
+
+			Model.C_GType gtype = new Model.C_GType();
+			gtype.G_Name = gname;
+			gtype.G_Penson = gpenson;
+			if (BLL.C_GType.Add(gtype) > 0) 
+			{
+				return "创建成功";
+			 }else {
+				return "创建失败";
+			 }
 		}
 	}
 }

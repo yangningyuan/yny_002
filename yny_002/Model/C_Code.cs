@@ -50,7 +50,7 @@ namespace yny_002.Model
 			get { return _c_gtype; }
 		}
 		/// <summary>
-		/// 充电桩状态
+		/// 充电桩状态 -1故障 0忙碌  1空闲
 		/// </summary>
 		public int C_State
 		{

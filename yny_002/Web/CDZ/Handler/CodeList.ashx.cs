@@ -60,7 +60,7 @@ namespace yny_002.Web.CDZ.Handler
 				sb.Append(ListMember[i].C_CJCodeID + "~");
 				sb.Append((BLL.C_GType.GetModel(ListMember[i].C_GType).G_Name) + "~");
 				sb.Append((ListMember[i].Statename) + "~");
-				sb.Append(ListMember[i].C_Path + "~");
+				sb.Append(("<div style='word-wrap:break-word;word-break: break-all; '>" + ListMember[i].C_Path+ "</div>") + "~");
 				sb.Append(("<img src='"+ ListMember[i].C_Path + "' style='width:120px; height=120px;' />") + "~");
 				sb.Append(ListMember[i].C_Create + "");
 				sb.Append("≌");

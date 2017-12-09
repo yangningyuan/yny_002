@@ -51,6 +51,7 @@
     <Compile Include="BankModel.cs" />
     <Compile Include="BaseClass.cs" />
     <Compile Include="BaseClassConfig\BaseParameter.cs" />
+    <Compile Include="Event\BaseMsg.cs" />
     <Compile Include="BCenter.cs" />
     <Compile Include="BMember.cs" />
     <Compile Include="BonusGift.cs" />
@@ -64,6 +65,8 @@
     <Compile Include="EP\EPConfig.cs" />
     <Compile Include="EP\EPJX.cs" />
     <Compile Include="EP\EPList.cs" />
+    <Compile Include="Event\ScanEventMessage.cs" />
+    <Compile Include="Event\WxXmlModel.cs" />
     <Compile Include="Expand\Expand.cs" />
     <Compile Include="Expand\TimeTypeEnum.cs" />
     <Compile Include="FundType.cs" />
