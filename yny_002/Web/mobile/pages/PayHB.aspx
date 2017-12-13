@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pay.aspx.cs" Inherits="yny_002.Web.mobile.pages.Pay" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PayHB.aspx.cs" Inherits="yny_002.Web.mobile.pages.PayHB" %>
 
 <!DOCTYPE html>
 <html>
@@ -15,6 +15,7 @@
 			<header id="header">
 				<h3><span class="iconfont goback">&#xe614;</span>充值</h3>
 			</header>
+            <form runat="server" id="form1">
 			<section>
 				<ul class="mui-table-view payType">
 					<li class="mui-table-view-cell title">
@@ -25,7 +26,7 @@
 				    </li>
 				    
 				</ul>
-				<div class='userInput'><input type="text" value="" /></div>
+				<div class='userInput'><input type="text" name="Money" value="5" /></div>
 				<ul class="numList chooseIt">
 					<li class="active">5</li>
 					<li>10</li>
@@ -33,10 +34,11 @@
 					<li>100</li>
 				</ul>
 				<div>
-					<button class="myButton">充值</button>
+					<button class="myButton" onclick="payChange()">充值</button>
 					<p class="tips">点击确定表示已阅读并同意<a href="">充值说明</a></p>
 				</div>
 			</section>
+                </form>
 			<footer id="footer">
 				<ul>
 					<li><a href="javascript:alert('功能暂未开发')"><span class="iconfont">&#xe605;</span><p>电站</p></a></li>
@@ -47,6 +49,12 @@
 		</div>
 		<script type="text/javascript" src="/mobile/js/jquery-1.11.3.js"></script>
 		<script type="text/javascript" src="/mobile/js/main.js"></script>
+        <script>
+            function payChange()
+            {
+                window.location.href = "http://paysdk.weixin.qq.com/example/JsApiPayPage.aspx?openid=&total_fee=1";
+            }
+        </script>
 	</body>
 </html>
 

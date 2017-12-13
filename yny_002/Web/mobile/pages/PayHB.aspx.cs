@@ -7,8 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace yny_002.Web.mobile.pages
 {
-	public partial class Pay : BasePage
+	public partial class PayHB : BasePage
 	{
+		
 		
 	}
 }

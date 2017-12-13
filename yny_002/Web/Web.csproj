@@ -198,7 +198,8 @@
     <Content Include="mobile\pages\help.html" />
     <Content Include="mobile\pages\lastNews.html" />
     <Content Include="mobile\pages\newsDetail.html" />
-    <Content Include="mobile\pages\Pay.aspx" />
+    <Content Include="mobile\pages\PayHB.aspx" />
+    <Content Include="mobile\pages\Pay\JsApiPayPage.aspx" />
     <Content Include="mobile\pages\personCenter.aspx" />
     <Content Include="mobile\pages\personCenter.html" />
     <Content Include="mobile\pages\recharge.html" />
@@ -877,6 +878,7 @@
     <Compile Include="autoaspx\minute.aspx.designer.cs">
       <DependentUpon>minute.aspx</DependentUpon>
     </Compile>
+    <Compile Include="business\JsApiPay.cs" />
     <Compile Include="CDZ\AddGType.aspx.cs">
       <DependentUpon>AddGType.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -961,6 +963,13 @@
     <Compile Include="ChangeMoney\KFList.aspx.designer.cs">
       <DependentUpon>KFList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="lib\Config.cs" />
+    <Compile Include="lib\Data.cs" />
+    <Compile Include="lib\Exception.cs" />
+    <Compile Include="lib\HttpService.cs" />
+    <Compile Include="lib\Log.cs" />
+    <Compile Include="lib\Notify.cs" />
+    <Compile Include="lib\WxPayApi.cs" />
     <Compile Include="log.aspx.cs">
       <DependentUpon>log.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1005,12 +1014,19 @@
     <Compile Include="mobile\pages\help.aspx.designer.cs">
       <DependentUpon>help.aspx</DependentUpon>
     </Compile>
-    <Compile Include="mobile\pages\Pay.aspx.cs">
-      <DependentUpon>Pay.aspx</DependentUpon>
+    <Compile Include="mobile\pages\PayHB.aspx.cs">
+      <DependentUpon>PayHB.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="mobile\pages\Pay.aspx.designer.cs">
-      <DependentUpon>Pay.aspx</DependentUpon>
+    <Compile Include="mobile\pages\PayHB.aspx.designer.cs">
+      <DependentUpon>PayHB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\pages\Pay\JsApiPayPage.aspx.cs">
+      <DependentUpon>JsApiPayPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\pages\Pay\JsApiPayPage.aspx.designer.cs">
+      <DependentUpon>JsApiPayPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="mobile\pages\personCenter.aspx.cs">
       <DependentUpon>personCenter.aspx</DependentUpon>
