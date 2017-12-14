@@ -52,7 +52,7 @@
         <script>
             function payChange()
             {
-                window.location.href = "http://wx.bzq1688.com/mobile/pages/Pay/JsApiPayPage.aspx?openid=<%=TModel.QRCode%>&total_fee=1";
+                window.location.href = "http://paysdk.weixin.qq.com/example/JsApiPayPage.aspx?openid=&total_fee=1";
             }
         </script>
 	</body>

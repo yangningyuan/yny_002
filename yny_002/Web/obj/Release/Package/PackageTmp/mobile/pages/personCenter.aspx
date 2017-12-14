@@ -29,7 +29,7 @@
             </ul>
             <ul class="mui-table-view perlist">
                 <li class="mui-table-view-cell perlist1">
-                    <a class="mui-navigate-right" href="/mobile/pages/pay.aspx"><span class="iconfont">&#xe635;</span>我要充值（余额：<%=TModel.MConfig.MJB %>）</a>
+                    <a class="mui-navigate-right" href="/mobile/pages/PayHB.aspx"><span class="iconfont">&#xe635;</span>我要充值（余额：<%=TModel.MConfig.MJB %>）</a>
                 </li>
 
             </ul>
