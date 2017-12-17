@@ -18,7 +18,7 @@ namespace yny_002.Web
         */
         public const string APPID = "wxd38d20377fa76818";
         public const string MCHID = "1493841552";
-        public const string KEY = "e10adc3849ba56abbe56e056f20f883e";
+        public const string KEY = "pan0602031266666666666666666666";
         public const string APPSECRET = "bfb5355bf94bc8f76ab3a3ba52223c54";
 
         //=======【证书路径设置】===================================== 
@@ -37,7 +37,7 @@ namespace yny_002.Web
         //=======【商户系统后台机器IP】===================================== 
         /* 此参数可手动配置也可在程序中自动获取
         */
-        public const string IP = "8.8.8.8";
+        public const string IP = "47.94.148.224";
 
 
         //=======【代理服务器设置】===================================
